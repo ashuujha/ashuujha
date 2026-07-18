@@ -87,10 +87,10 @@ Current Focus: CSE Student (AI & ML)
 Location: Kolkata
 
 GitHub Stats: 
-  Repositories: 6
+  Repositories: 7
   Followers: 4
-  Following: 7
-  Commits: 48
+  Following: 6
+  Commits: 60
   Stars Earned: 2
   Pull Requests: 5
   Issues/Reviews: 0 / 0

@@ -69,5 +69,6 @@ jobs:
             echo "No changes detected. Skipping commit."
           else
             git commit -m "docs(readme): refresh developer dashboard [skip ci]"
+            git pull --rebase origin main
             git push origin main
           fi
