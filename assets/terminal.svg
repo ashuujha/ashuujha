@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 512" width="100%" height="512">
+  <style>
+    .terminal { font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13px; fill: #c9d1d9; }
+    .key { fill: #58a6ff; font-weight: bold; }
+    .title { fill: #58a6ff; font-weight: bold; }
+    .control-dot { stroke-width: 0; }
+    .header-text { fill: #8b949e; font-size: 12px; font-weight: bold; }
+  </style>
+  <rect width="850" height="512" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
+  <!-- Title Bar -->
+  <circle cx="25" cy="22" r="6" fill="#ff5f56" class="control-dot" />
+  <circle cx="45" cy="22" r="6" fill="#ffbd2e" class="control-dot" />
+  <circle cx="65" cy="22" r="6" fill="#27c93f" class="control-dot" />
+  <text x="425" y="26" text-anchor="middle" class="terminal header-text">ashuu1408@developer-os:~</text>
+  <line x1="0" y1="40" x2="850" y2="40" stroke="#30363d" stroke-width="1.5" />
+  <!-- ASCII Art Column -->
+  <text x="25" y="60" class="terminal" xml:space="preserve">
+    <tspan x="25" dy="0em">             ,:=!*#$$@@$$#*!;~,             </tspan>
+    <tspan x="25" dy="1.2em">          .,-~;=#@@@@@@@@@@@@@$#!:          </tspan>
+    <tspan x="25" dy="1.2em">       ,,,,,,,:::$@$@@@@@$$$$$$@@@$*~       </tspan>
+    <tspan x="25" dy="1.2em">     ~!=,.-~;;~;!*$$$$$@@@@@@@$$$$$@@#:     </tspan>
+    <tspan x="25" dy="1.2em">   ,!@$$!-~~~!==*#!#@@@@$$$@@@@$$$$$$$@*,   </tspan>
+    <tspan x="25" dy="1.2em">  -#$$$$@;:=;~:;:!*!!*$@@@@$@@@$$$$$$$$$$~  </tspan>
+    <tspan x="25" dy="1.2em"> -$$#$$$$*;;:~::;::-,~;;;*$@@@$$$$$$$$$##$~ </tspan>
+    <tspan x="25" dy="1.2em"> #$#$$$$$@@$~,-,,,-,,-,~--~=$@@@@@$$$$$$###,</tspan>
+    <tspan x="25" dy="1.2em">;$#$$$$$$@*-.  .,--.,,,-,.,=$$$#$$$$#######=</tspan>
+    <tspan x="25" dy="1.2em">=!!*####$#~..   ~:,.,,,, .=#*##!***#**!!!!!=</tspan>
+    <tspan x="25" dy="1.2em">;====!*##:,,....:: ..,,.:*#*###!!!!!!!====;;</tspan>
+    <tspan x="25" dy="1.2em">;;=;=;!**~......;-  . ,;##*##$#========;;;::</tspan>
+    <tspan x="25" dy="1.2em">~;;;;=***;. ..  ,,    ;=******#;=;;;;;;::~~,</tspan>
+    <tspan x="25" dy="1.2em"> :;;;!**!=-         ,;**####*##;:;::~~~~~-- </tspan>
+    <tspan x="25" dy="1.2em"> .::;***!!:..,---~:=$#**!!**#;!#~~~~~~~~--. </tspan>
+    <tspan x="25" dy="1.2em">  .:=!!!!!=::!=====;!*!!!*!*; .::-~~~~---.  </tspan>
+    <tspan x="25" dy="1.2em">   .;*!!!*!=;:~-----~:;;;;;- .,,~~------    </tspan>
+    <tspan x="25" dy="1.2em">     -==;:-~~~-,.      .-,   .,--~~~~-.     </tspan>
+    <tspan x="25" dy="1.2em">       ,-,-,..                 .,,--,       </tspan>
+    <tspan x="25" dy="1.2em">          .                     .           </tspan>
+    <tspan x="25" dy="1.2em">                      ....                  </tspan>
+  </text>
+  <!-- Neofetch Stats Column -->
+  <text x="410" y="60" class="terminal" xml:space="preserve">
+    <tspan x="410" dy="0em" class="title">ashuu1408@developer-os</tspan>
+    <tspan x="410" dy="1.2em" fill="#30363d">----------------------</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">OS</tspan>: Linux (Ubuntu / Alpine / Debian)</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">Uptime (GitHub age)</tspan>: 1 year, 8 months, 27 days</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">Shell</tspan>: bash / zsh / fish</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">Editor</tspan>: Neovim / VS Code</tspan>
+    <tspan x="410" dy="1.2em"> </tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">Languages</tspan>: Go, Python, Rust, TypeScript, JavaScript, C++</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">Frameworks</tspan>: Node.js, Express, FastAPI, React, Next.js, Vue.js</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">Databases</tspan>: PostgreSQL, MongoDB, Redis</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">DevOps/CI</tspan>: Docker, Kubernetes, GitHub Actions</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">Cloud</tspan>: AWS, GCP</tspan>
+    <tspan x="410" dy="1.2em"> </tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">Current Focus</tspan>: Building scalable, high-performance systems.</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">Location</tspan>: Kolkata</tspan>
+    <tspan x="410" dy="1.2em"> </tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key">GitHub Stats</tspan>: </tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key" fill="#888">  Repositories</tspan>: 6</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key" fill="#888">  Followers</tspan>: 4</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key" fill="#888">  Following</tspan>: 7</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key" fill="#888">  Commits</tspan>: 1,000+</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key" fill="#888">  Stars Earned</tspan>: 2</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key" fill="#888">  Pull Requests</tspan>: 100+</tspan>
+    <tspan x="410" dy="1.2em"><tspan class="key" fill="#888">  Issues/Reviews</tspan>: 50+ / 20+</tspan>
+  </text>
+</svg>

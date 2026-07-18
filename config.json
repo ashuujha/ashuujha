@@ -1,0 +1,58 @@
+{
+  "github_username": "ashuu1408",
+  "name": "Ashutosh Jha",
+  "title": "Staff Software Engineer | DevOps | Open Source Maintainer",
+  "location": "India",
+  "timezone": "Asia/Kolkata",
+  "typing_texts": [
+    "Staff Software Engineer",
+    "DevOps & Automation Architect",
+    "Open Source Maintainer",
+    "AI/ML Engineer",
+    "Building scalable, high-performance systems."
+  ],
+  "about": [
+    "Building high-performance backend systems, microservices, and robust cloud infrastructure.",
+    "Actively maintaining and contributing to open-source software and tools.",
+    "Designing intelligent systems powered by AI/ML and automation workflows.",
+    "Committed to continuous learning, architectural excellence, and developer productivity."
+  ],
+  "socials": {
+    "linkedin": "https://linkedin.com/in/ashuu1408",
+    "twitter": "https://twitter.com/ashuu1408",
+    "portfolio": "https://ashuu1408.github.io",
+    "email": "ashuu1408@gmail.com",
+    "discord": "https://discord.com/users/ashuu1408",
+    "instagram": "https://instagram.com/ashuu1408",
+    "leetcode": "https://leetcode.com/ashuu1408",
+    "codeforces": "https://codeforces.com/profile/ashuu1408",
+    "hackerrank": "https://hackerrank.com/ashuu1408",
+    "youtube": "https://youtube.com/@ashuu1408",
+    "hashnode": "https://hashnode.com/@ashuu1408",
+    "medium": "https://medium.com/@ashuu1408",
+    "devto": "https://dev.to/ashuu1408",
+    "telegram": "https://t.me/ashuu1408"
+  },
+  "tech_stack": {
+    "languages": ["Go", "Python", "Rust", "TypeScript", "JavaScript", "C++", "SQL", "Bash"],
+    "backend": ["Node.js", "Express", "FastAPI", "Gin", "gRPC", "GraphQL"],
+    "frontend": ["React", "Next.js", "Vue.js", "TailwindCSS", "HTML5/CSS3"],
+    "databases": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Elasticsearch"],
+    "cloud": ["AWS", "GCP", "Azure", "Cloudflare"],
+    "devops": ["Docker", "Kubernetes", "GitHub Actions", "Terraform", "Ansible", "Linux"],
+    "ai_ml": ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face", "LangChain"],
+    "tools": ["Git", "Neovim", "VS Code", "Postman", "Wireshark"],
+    "learning": ["WebAssembly", "Zig", "eBPF", "Rust Macro Systems"]
+  },
+  "wakatime_username": "ashuu1408",
+  "blog": {
+    "hashnode": "",
+    "medium": "",
+    "devto": "",
+    "rss_feed": ""
+  },
+  "youtube_channel_id": "",
+  "spotify": {
+    "enabled": false
+  }
+}

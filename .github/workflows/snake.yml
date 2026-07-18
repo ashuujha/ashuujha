@@ -1,0 +1,45 @@
+name: Generate Snake Animation
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run once a day at midnight
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/snake.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ashuu1408
+          outputs: |
+            assets/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#58a6ff
+            assets/github-contribution-grid-snake-light.svg?palette=github-light
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git add assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-light.svg
+          
+          if git diff --cached --quiet; then
+            echo "No changes in snake animation."
+          else
+            git commit -m "chore(snake): update contribution grid animation [skip ci]"
+            git push origin main
+          fi

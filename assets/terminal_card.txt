@@ -1,0 +1,24 @@
+             ,:=!*#$$@@$$#*!;~,                ashuu1408@developer-os
+          .,-~;=#@@@@@@@@@@@@@$#!:             ----------------------
+       ,,,,,,,:::$@$@@@@@$$$$$$@@@$*~          OS: Linux (Ubuntu / Alpine / Debian)
+     ~!=,.-~;;~;!*$$$$$@@@@@@@$$$$$@@#:        Uptime (GitHub age): 1 year, 8 months, 27 days
+   ,!@$$!-~~~!==*#!#@@@@$$$@@@@$$$$$$$@*,      Shell: bash / zsh / fish
+  -#$$$$@;:=;~:;:!*!!*$@@@@$@@@$$$$$$$$$$~     Editor: Neovim / VS Code
+ -$$#$$$$*;;:~::;::-,~;;;*$@@@$$$$$$$$$##$~    
+ #$#$$$$$@@$~,-,,,-,,-,~--~=$@@@@@$$$$$$###,   Languages: Go, Python, Rust, TypeScript, JavaScript, C++
+;$#$$$$$$@*-.  .,--.,,,-,.,=$$$#$$$$#######=   Frameworks: Node.js, Express, FastAPI, React, Next.js, Vue.js
+=!!*####$#~..   ~:,.,,,, .=#*##!***#**!!!!!=   Databases: PostgreSQL, MongoDB, Redis
+;====!*##:,,....:: ..,,.:*#*###!!!!!!!====;;   DevOps/CI: Docker, Kubernetes, GitHub Actions
+;;=;=;!**~......;-  . ,;##*##$#========;;;::   Cloud: AWS, GCP
+~;;;;=***;. ..  ,,    ;=******#;=;;;;;;::~~,   
+ :;;;!**!=-         ,;**####*##;:;::~~~~~--    Current Focus: Building scalable, high-performance systems.
+ .::;***!!:..,---~:=$#**!!**#;!#~~~~~~~~--.    Location: Kolkata
+  .:=!!!!!=::!=====;!*!!!*!*; .::-~~~~---.     
+   .;*!!!*!=;:~-----~:;;;;;- .,,~~------       GitHub Stats: 
+     -==;:-~~~-,.      .-,   .,--~~~~-.          Repositories: 6
+       ,-,-,..                 .,,--,            Followers: 4
+          .                     .                Following: 7
+                      ....                       Commits: 1,000+
+                                                 Stars Earned: 2
+                                                 Pull Requests: 100+
+                                                 Issues/Reviews: 50+ / 20+
