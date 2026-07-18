@@ -1,6 +1,6 @@
 <div align="center">
   <h1>👋 I'm Ashutosh Jha</h1>
-  <h3>3D Animator & Creative Developer</h3>
+  <h3>I make 2Ds move & a creative Developer</h3>
   <p>
     <a href="https://discord.com/users/ashuujha" target="_blank"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
     <a href="https://www.instagram.com/ashuu0001__" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
@@ -13,7 +13,6 @@
 <br />
 
 <!-- Terminal Neofetch Card -->
-## 🖥️ System Information
 
 <div align="center">
   <img src="./assets/terminal.svg" width="100%" alt="Neofetch Terminal" />
@@ -24,14 +23,15 @@
 <!-- About Section -->
 ## 👤 About
 
-> Currently learning and building projects using JavaScript and React, with a growing interest in Artificial Intelligence and Machine Learning.
+> Currently learning and building projects with a growing interest in Artificial Intelligence and Machine Learning.
+
 > I believe in learning by building and constantly experimenting with new ideas.
 > Started working as a freelancer and later expanded into an agency model, now managing regular active clients across India.
 
 ---
 
 <!-- GitHub Analytics / Dashboard -->
-## 📊 Live GitHub Metrics
+## Live GitHub Metrics
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ashuujha&amp;show_icons=true&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;icon_color=58a6ff&amp;text_color=c9d1d9" alt="GitHub Stats" width="48%" />
@@ -50,12 +50,12 @@
 ---
 
 <!-- Recent Activity -->
-## 🗂️ Latest Kernel Logs (Recent Activity)
+##  Latest Kernel Logs (Recent Activity)
 
-- 🔀 Merged PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/7) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
-- 🔀 Opened PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/7) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
-- 🔀 Merged PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/6) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
-- 🔀 Opened PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/6) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
+-  Merged PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/7) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
+-  Opened PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/7) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
+- Merged PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/6) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
+- Opened PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/6) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
 - ⭐ Starred [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 12, 2026)
 - ⭐ Starred [Pradeeeeeeeep/ISRO-challenge-7](https://github.com/Pradeeeeeeeep/ISRO-challenge-7) (Jul 05, 2026)
 
