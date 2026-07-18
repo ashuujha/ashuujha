@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1369" width="100%" height="1369">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1513" width="100%" height="1513">
   <style>
     .terminal { font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 11px; fill: #c9d1d9; }
     .stats-text { font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13px; fill: #c9d1d9; }
@@ -7,7 +7,7 @@
     .control-dot { stroke-width: 0; }
     .header-text { fill: #8b949e; font-size: 12px; font-weight: bold; }
   </style>
-  <rect width="850" height="1369" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
+  <rect width="850" height="1513" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
   <!-- Title Bar -->
   <circle cx="25" cy="22" r="6" fill="#ff5f56" class="control-dot" />
   <circle cx="45" cy="22" r="6" fill="#ffbd2e" class="control-dot" />
@@ -87,36 +87,31 @@
     <tspan x="30" dy="1.2em">mmpqqpq0XJO0Q0CXx1(tr1&quot;aC[fjq$$$$$$$$Ot$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$8$$%8$@&amp;#o*CL|</tspan>
   </text>
   <line x1="20" y1="1036" x2="830" y2="1036" stroke="#30363d" stroke-width="1.5" />
-  <!-- Left Column: System Info -->
+  <!-- Neofetch Stats Section -->
   <text x="35" y="1066" class="stats-text" xml:space="preserve">
-    <tspan x="35" dy="0em" fill="#8b949e">🖥️ SYSTEM INFORMATION</tspan>
-    <tspan x="35" dy="1.2em" fill="#8b949e">=========================</tspan>
-    <tspan x="35" dy="1.2em" class="title">ashuu1408@developer-os</tspan>
-    <tspan x="35" dy="1.2em" fill="#8b949e">----------------------</tspan>
+    <tspan x="35" dy="0em" class="title">ashuu1408@developer-os</tspan>
+    <tspan x="35" dy="1.2em" fill="#30363d">----------------------</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">OS</tspan>: Linux (Ubuntu / Alpine / Debian)</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Uptime (GitHub age)</tspan>: 1 year, 8 months, 27 days</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Shell</tspan>: bash / zsh / fish</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Editor</tspan>: Neovim / VS Code</tspan>
+    <tspan x="35" dy="1.2em"> </tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key">Languages</tspan>: Go, Python, Rust, TypeScript, JavaScript, C++</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key">Frameworks</tspan>: Node.js, Express, FastAPI, React, Next.js, Vue.js</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key">Databases</tspan>: PostgreSQL, MongoDB, Redis</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key">DevOps/CI</tspan>: Docker, Kubernetes, GitHub Actions</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key">Cloud</tspan>: AWS, GCP</tspan>
+    <tspan x="35" dy="1.2em"> </tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Current Focus</tspan>: Building scalable, high-performance systems.</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Location</tspan>: Kolkata</tspan>
-  </text>
-  <!-- Right Column: Dev Stack & Stats -->
-  <text x="440" y="1066" class="stats-text" xml:space="preserve">
-    <tspan x="440" dy="0em" fill="#8b949e">📊 DEVELOPMENT PROFILE</tspan>
-    <tspan x="440" dy="1.2em" fill="#8b949e">=========================</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key">Languages</tspan>: Go, Python, Rust, TypeScript, JavaScript, C++</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key">Frameworks</tspan>: Node.js, Express, FastAPI, React, Next.js, Vue.js</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key">Databases</tspan>: PostgreSQL, MongoDB, Redis</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key">DevOps/CI</tspan>: Docker, Kubernetes, GitHub Actions</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key">Cloud</tspan>: AWS, GCP</tspan>
-    <tspan x="440" dy="1.2em"> </tspan>
-    <tspan x="440" dy="1.2em" font-weight="bold" fill="#58a6ff">GitHub Stats:</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key" fill="#8b949e">  Repositories</tspan>: 6</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key" fill="#8b949e">  Followers</tspan>: 4</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key" fill="#8b949e">  Following</tspan>: 7</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key" fill="#8b949e">  Commits</tspan>: 1,000+</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key" fill="#8b949e">  Stars Earned</tspan>: 2</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key" fill="#8b949e">  Pull Requests</tspan>: 100+</tspan>
-    <tspan x="440" dy="1.2em"><tspan class="key" fill="#8b949e">  Issues/Reviews</tspan>: 50+ / 20+</tspan>
+    <tspan x="35" dy="1.2em"> </tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key">GitHub Stats</tspan>: </tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Repositories</tspan>: 6</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Followers</tspan>: 4</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Following</tspan>: 7</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Commits</tspan>: 1,000+</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Stars Earned</tspan>: 2</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Pull Requests</tspan>: 100+</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Issues/Reviews</tspan>: 50+ / 20+</tspan>
   </text>
 </svg>
