@@ -5,11 +5,12 @@
   "public_repos": 6,
   "uptime": "1 year, 8 months, 27 days",
   "location": "Kolkata",
-  "stars_earned": 2,
+  "stars_earned": 3,
   "most_used_language": "Solidity",
   "top_languages": [
     "Solidity",
     "TypeScript",
+    "Python",
     "JavaScript"
   ],
   "featured_projects": {
@@ -19,44 +20,44 @@
         "description": "",
         "stars": 1,
         "language": "Solidity",
-        "url": "https://github.com/ashuu1408/Ashu"
+        "url": "https://github.com/ashuujha/Ashu"
+      },
+      {
+        "name": "ashuu1408",
+        "description": "",
+        "stars": 1,
+        "language": "Python",
+        "url": "https://github.com/ashuujha/ashuu1408"
       },
       {
         "name": "js",
         "description": "A code repo for javascript series",
         "stars": 1,
         "language": "JavaScript",
-        "url": "https://github.com/ashuu1408/js"
+        "url": "https://github.com/ashuujha/js"
       },
       {
         "name": "ashu-sup",
         "description": "",
         "stars": 0,
         "language": "TypeScript",
-        "url": "https://github.com/ashuu1408/ashu-sup"
-      },
-      {
-        "name": "ashuu1408",
-        "description": "",
-        "stars": 0,
-        "language": "Other",
-        "url": "https://github.com/ashuu1408/ashuu1408"
+        "url": "https://github.com/ashuujha/ashu-sup"
       }
     ],
     "latest_active": {
       "name": "ashuu1408",
       "description": "",
-      "stars": 0,
-      "language": "Other",
-      "url": "https://github.com/ashuu1408/ashuu1408",
-      "pushed_at": "2026-07-18T05:12:59Z"
+      "stars": 1,
+      "language": "Python",
+      "url": "https://github.com/ashuujha/ashuu1408",
+      "pushed_at": "2026-07-18T09:15:13Z"
     },
     "newest": {
       "name": "ashuu1408",
       "description": "",
-      "stars": 0,
-      "language": "Other",
-      "url": "https://github.com/ashuu1408/ashuu1408",
+      "stars": 1,
+      "language": "Python",
+      "url": "https://github.com/ashuujha/ashuu1408",
       "created_at": "2026-07-18T05:12:58Z"
     }
   },
@@ -65,11 +66,11 @@
   "total_issues": "50+",
   "total_reviews": "20+",
   "recent_activities": [
+    "\u2b50 Starred [ashuujha/ashuu1408](https://github.com/ashuujha/ashuu1408) (Jul 18, 2026)",
     "\ud83d\udd00 Merged PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/7) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)",
     "\ud83d\udd00 Opened PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/7) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)",
     "\ud83d\udd00 Merged PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/6) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)",
     "\ud83d\udd00 Opened PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/6) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)",
-    "\u2b50 Starred [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 12, 2026)",
-    "\u2b50 Starred [Pradeeeeeeeep/ISRO-challenge-7](https://github.com/Pradeeeeeeeep/ISRO-challenge-7) (Jul 05, 2026)"
+    "\u2b50 Starred [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 12, 2026)"
   ]
 }

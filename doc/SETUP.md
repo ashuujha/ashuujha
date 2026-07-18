@@ -44,7 +44,7 @@ To enable the profile updater to fetch search statistics (like total commits, pu
 5. Generate the token and copy the value immediately.
 
 ### Step 2: Add Secrets to Your Profile Repository
-In your `ashuu1408/ashuu1408` repository:
+In your `ashuujha/ashuujha` repository:
 1. Go to **Settings** -> **Secrets and variables** -> **Actions**.
 2. Click **New repository secret**.
 3. Name: `GH_PAT` (or `GH_TOKEN`).
@@ -73,7 +73,7 @@ To automatically update your profile README whenever you push code to *any* of y
            uses: peter-evans/repository-dispatch@v3
            with:
              token: ${{ secrets.GH_PAT }}
-             repository: ashuu1408/ashuu1408
+             repository: ashuujha/ashuujha
              event-type: repo-update
    ```
 3. Make sure to add the same `GH_PAT` secret to those repositories as well. Whenever you push to those repositories, it will trigger the `repo-update` event, which automatically updates the profile dashboard!

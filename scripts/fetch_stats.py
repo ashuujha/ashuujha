@@ -392,9 +392,9 @@ def main():
         with open(config_path, "r") as f:
             config = json.load(f)
     else:
-        config = {"github_username": "ashuu1408"}
+        config = {"github_username": "ashuujha"}
         
-    username = config.get("github_username", "ashuu1408")
+    username = config.get("github_username", "ashuujha")
     
     # Try GraphQL first, fallback to REST
     stats = None

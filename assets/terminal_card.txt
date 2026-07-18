@@ -70,8 +70,8 @@ mmpqqpq0XJO0Q0CXx1(tr1"aC[fjq$$$$$$$$Ot$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 ================================================================================
 
-ashuu1408@developer-os
-----------------------
+ashuujha@developer-os
+---------------------
 OS: Linux (Ubuntu / Alpine / Debian)
 Uptime (GitHub age): 1 year, 8 months, 27 days
 Shell: bash / zsh / fish
@@ -91,6 +91,6 @@ GitHub Stats:
   Followers: 4
   Following: 7
   Commits: 1,000+
-  Stars Earned: 2
+  Stars Earned: 3
   Pull Requests: 100+
   Issues/Reviews: 50+ / 20+

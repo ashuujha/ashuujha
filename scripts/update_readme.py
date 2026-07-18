@@ -86,7 +86,7 @@ def generate_typing_svg(texts, output_path):
         # Cursor positions along the text width
         # A single character width is roughly 12px for font-size 20px
         char_w = 12.0
-        prompt_x = 240.0 # Approximate width of "ashuu1408@developer-os:~$ "
+        prompt_x = 240.0 # Approximate width of "ashuujha@developer-os:~$ "
         
         for j in range(L + 1):
             t_cursor = t_start + (j / L) * 2.0 if j < L else t_start + 2.0
@@ -111,7 +111,7 @@ def generate_typing_svg(texts, output_path):
     svg.append('  </style>')
     
     # Render prompt
-    svg.append(f'  <text x="20" y="42" class="prompt">ashuu1408@developer-os:~$ </text>')
+    svg.append(f'  <text x="20" y="42" class="prompt">ashuujha@developer-os:~$ </text>')
     
     # Render text characters
     for i, text in enumerate(texts):
@@ -318,7 +318,7 @@ def main():
         template = f.read()
         
     # Replace simple variables
-    github_username = config.get("github_username", "ashuu1408")
+    github_username = config.get("github_username", "ashuujha")
     template = template.replace("{{GITHUB_USERNAME}}", github_username)
     
     # Last updated

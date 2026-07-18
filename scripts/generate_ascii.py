@@ -99,9 +99,9 @@ if __name__ == "__main__":
         with open(config_path, "r") as f:
             config = json.load(f)
     else:
-        config = {"github_username": "ashuu1408"}
+        config = {"github_username": "ashuujha"}
         
-    username = config.get("github_username", "ashuu1408")
+    username = config.get("github_username", "ashuujha")
     
     # Check if a custom ascii.txt exists in the root directory
     root_ascii_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "ascii.txt")

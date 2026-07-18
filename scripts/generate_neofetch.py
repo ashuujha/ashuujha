@@ -53,7 +53,7 @@ def load_ascii_art():
 
 def format_neofetch_lines(config, stats):
     """Formats the Neofetch text lines."""
-    username = config.get("github_username", "ashuu1408")
+    username = config.get("github_username", "ashuujha")
     
     # Formatted last updated time (local time of runner or UTC)
     now = datetime.now(timezone.utc)
@@ -164,7 +164,7 @@ def generate_svg_card(ascii_lines, neofetch_lines):
     svg.append('  <circle cx="25" cy="22" r="6" fill="#ff5f56" class="control-dot" />')
     svg.append('  <circle cx="45" cy="22" r="6" fill="#ffbd2e" class="control-dot" />')
     svg.append('  <circle cx="65" cy="22" r="6" fill="#27c93f" class="control-dot" />')
-    svg.append(f'  <text x="{width // 2}" y="26" text-anchor="middle" class="stats-text header-text">ashuu1408@developer-os:~</text>')
+    svg.append(f'  <text x="{width // 2}" y="26" text-anchor="middle" class="stats-text header-text">ashuujha@developer-os:~</text>')
     svg.append(f'  <line x1="0" y1="40" x2="{width}" y2="40" stroke="{border_color}" stroke-width="1.5" />')
     
     # Render ASCII Art (Stacked on top)

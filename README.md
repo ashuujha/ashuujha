@@ -51,31 +51,31 @@
 
 ### 🌟 Starred & Highlighted Repositories
 
-#### 📂 [Ashu](https://github.com/ashuu1408/Ashu)
+#### 📂 [Ashu](https://github.com/ashuujha/Ashu)
 > 
 - **Stack:** Solidity
 - **Metrics:** ★ 1
 
-#### 📂 [js](https://github.com/ashuu1408/js)
+#### 📂 [ashuu1408](https://github.com/ashuujha/ashuu1408)
+> 
+- **Stack:** Python
+- **Metrics:** ★ 1
+
+#### 📂 [js](https://github.com/ashuujha/js)
 > A code repo for javascript series
 - **Stack:** JavaScript
 - **Metrics:** ★ 1
 
-#### 📂 [ashu-sup](https://github.com/ashuu1408/ashu-sup)
+#### 📂 [ashu-sup](https://github.com/ashuujha/ashu-sup)
 > 
 - **Stack:** TypeScript
 - **Metrics:** ★ 0
 
-#### 📂 [ashuu1408](https://github.com/ashuu1408/ashuu1408)
-> 
-- **Stack:** Other
-- **Metrics:** ★ 0
-
 ### ⚡ Active Focus
 
-#### 📂 [ashuu1408](https://github.com/ashuu1408/ashuu1408)
+#### 📂 [ashuu1408](https://github.com/ashuujha/ashuu1408)
 > 
-- **Stack:** Other
+- **Stack:** Python
 - **Last Updated:** July 2026 (Automated detection)
 
 
@@ -85,15 +85,15 @@
 ## 📊 Live GitHub Metrics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ashuu1408&amp;show_icons=true&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;icon_color=58a6ff&amp;text_color=c9d1d9" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ashuu1408&amp;theme=dark&amp;hide_border=true&amp;background=0d1117&amp;ring=58a6ff&amp;fire=58a6ff&amp;currStreakLabel=58a6ff&amp;sideNums=c9d1d9&amp;sideLabels=8b949e" alt="GitHub Streak" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ashuujha&amp;show_icons=true&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;icon_color=58a6ff&amp;text_color=c9d1d9" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ashuujha&amp;theme=dark&amp;hide_border=true&amp;background=0d1117&amp;ring=58a6ff&amp;fire=58a6ff&amp;currStreakLabel=58a6ff&amp;sideNums=c9d1d9&amp;sideLabels=8b949e" alt="GitHub Streak" width="48%" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashuu1408&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" alt="Top Languages" width="48%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ashuu1408&amp;theme=github_dark" alt="Profile Details" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashuujha&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" alt="Top Languages" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ashuujha&amp;theme=github_dark" alt="Profile Details" width="48%" />
 </div>
 
 <br />
@@ -115,7 +115,7 @@
 ## 📈 Coding Insights & Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=ashuu1408&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" alt="WakaTime Stats" width="80%" />
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=ashuujha&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" alt="WakaTime Stats" width="80%" />
 </div>
 
 ---
@@ -123,12 +123,12 @@
 <!-- Recent Activity -->
 ## 🗂️ Latest Kernel Logs (Recent Activity)
 
+- ⭐ Starred [ashuujha/ashuu1408](https://github.com/ashuujha/ashuu1408) (Jul 18, 2026)
 - 🔀 Merged PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/7) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
 - 🔀 Opened PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/7) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
 - 🔀 Merged PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/6) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
 - 🔀 Opened PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/6) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
 - ⭐ Starred [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 12, 2026)
-- ⭐ Starred [Pradeeeeeeeep/ISRO-challenge-7](https://github.com/Pradeeeeeeeep/ISRO-challenge-7) (Jul 05, 2026)
 
 ---
 
@@ -141,7 +141,7 @@
 ## 🏆 System Achievements
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ashuu1408&amp;theme=onedark&amp;no-bg=true&amp;no-border=true&amp;column=7" alt="GitHub Trophies" width="100%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=ashuujha&amp;theme=onedark&amp;no-bg=true&amp;no-border=true&amp;column=7" alt="GitHub Trophies" width="100%" />
 </div>
 
 <br />
@@ -152,11 +152,11 @@
 ## 🔌 Ports / External Connections
 
 <div align="center">
-  [● LINKEDIN](https://linkedin.com/in/ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● TWITTER](https://twitter.com/ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● PORTFOLIO](https://ashuu1408.github.io) &nbsp;&nbsp;&nbsp;&nbsp; [● EMAIL](ashuu1408@gmail.com) &nbsp;&nbsp;&nbsp;&nbsp; [● DISCORD](https://discord.com/users/ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● INSTAGRAM](https://instagram.com/ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● LEETCODE](https://leetcode.com/ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● CODEFORCES](https://codeforces.com/profile/ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● HACKERRANK](https://hackerrank.com/ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● YOUTUBE](https://youtube.com/@ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● HASHNODE](https://hashnode.com/@ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● MEDIUM](https://medium.com/@ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● DEVTO](https://dev.to/ashuu1408) &nbsp;&nbsp;&nbsp;&nbsp; [● TELEGRAM](https://t.me/ashuu1408)
+  [● LINKEDIN](https://linkedin.com/in/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● TWITTER](https://twitter.com/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● PORTFOLIO](https://ashuujha.github.io) &nbsp;&nbsp;&nbsp;&nbsp; [● EMAIL](ashuujha@gmail.com) &nbsp;&nbsp;&nbsp;&nbsp; [● DISCORD](https://discord.com/users/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● INSTAGRAM](https://instagram.com/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● LEETCODE](https://leetcode.com/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● CODEFORCES](https://codeforces.com/profile/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● HACKERRANK](https://hackerrank.com/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● YOUTUBE](https://youtube.com/@ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● HASHNODE](https://hashnode.com/@ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● MEDIUM](https://medium.com/@ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● DEVTO](https://dev.to/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● TELEGRAM](https://t.me/ashuujha)
 </div>
 
 <br />
 
 <div align="center">
-  <sub>Last updated: <i>2026-07-18 09:14:46 UTC</i> | System status: <b>Operational</b></sub>
+  <sub>Last updated: <i>2026-07-18 09:31:31 UTC</i> | System status: <b>Operational</b></sub>
 </div>

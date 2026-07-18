@@ -12,7 +12,7 @@
   <circle cx="25" cy="22" r="6" fill="#ff5f56" class="control-dot" />
   <circle cx="45" cy="22" r="6" fill="#ffbd2e" class="control-dot" />
   <circle cx="65" cy="22" r="6" fill="#27c93f" class="control-dot" />
-  <text x="425" y="26" text-anchor="middle" class="stats-text header-text">ashuu1408@developer-os:~</text>
+  <text x="425" y="26" text-anchor="middle" class="stats-text header-text">ashuujha@developer-os:~</text>
   <line x1="0" y1="40" x2="850" y2="40" stroke="#30363d" stroke-width="1.5" />
   <!-- ASCII Art Section -->
   <text x="30" y="60" class="terminal" xml:space="preserve">
@@ -89,8 +89,8 @@
   <line x1="20" y1="1036" x2="830" y2="1036" stroke="#30363d" stroke-width="1.5" />
   <!-- Neofetch Stats Section -->
   <text x="35" y="1066" class="stats-text" xml:space="preserve">
-    <tspan x="35" dy="0em" class="title">ashuu1408@developer-os</tspan>
-    <tspan x="35" dy="1.2em" fill="#30363d">----------------------</tspan>
+    <tspan x="35" dy="0em" class="title">ashuujha@developer-os</tspan>
+    <tspan x="35" dy="1.2em" fill="#30363d">---------------------</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">OS</tspan>: Linux (Ubuntu / Alpine / Debian)</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Uptime (GitHub age)</tspan>: 1 year, 8 months, 27 days</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Shell</tspan>: bash / zsh / fish</tspan>
@@ -110,7 +110,7 @@
     <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Followers</tspan>: 4</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Following</tspan>: 7</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Commits</tspan>: 1,000+</tspan>
-    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Stars Earned</tspan>: 2</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Stars Earned</tspan>: 3</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Pull Requests</tspan>: 100+</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Issues/Reviews</tspan>: 50+ / 20+</tspan>
   </text>
