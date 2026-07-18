@@ -1,6 +1,6 @@
 <div align="center">
   <h1>👋 I'm Ashutosh Jha</h1>
-  <h3>3D Animator & Creative Developer</h3>
+  <h3>I make 2Ds move | Creative Developer</h3>
   <p>
     <a href="https://discord.com/users/ashuujha" target="_blank"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
     <a href="https://www.instagram.com/ashuu0001__" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
@@ -13,7 +13,6 @@
 <br />
 
 <!-- Terminal Neofetch Card -->
-## 🖥️ System Information
 
 <div align="center">
   <img src="./assets/terminal.svg" width="100%" alt="Neofetch Terminal" />
@@ -29,7 +28,7 @@
 ---
 
 <!-- GitHub Analytics / Dashboard -->
-## 📊 Live GitHub Metrics
+## Live GitHub Metrics
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username={{GITHUB_USERNAME}}&amp;show_icons=true&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;icon_color=58a6ff&amp;text_color=c9d1d9" alt="GitHub Stats" width="48%" />
@@ -48,7 +47,7 @@
 ---
 
 <!-- Recent Activity -->
-## 🗂️ Latest Kernel Logs (Recent Activity)
+## Latest Kernel Logs (Recent Activity)
 
 {{RECENT_ACTIVITY}}
 
