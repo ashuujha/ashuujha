@@ -51,6 +51,66 @@ def calculate_uptime(created_at_str):
         
     return ", ".join(parts)
 
+def fetch_real_counts_fallback(username):
+    headers = get_headers()
+    # Add cloak-preview for commits search
+    commit_headers = headers.copy()
+    commit_headers["Accept"] = "application/vnd.github.cloak-preview"
+    
+    counts = {
+        "commits": 0,
+        "prs": 0,
+        "issues": 0,
+        "reviews": 0
+    }
+    
+    # Fetch commits count
+    try:
+        res = requests.get(f"https://api.github.com/search/commits?q=author:{username}", headers=commit_headers, timeout=10)
+        if res.status_code == 200:
+            counts["commits"] = res.json().get("total_count", 0)
+        else:
+            print(f"Commit search failed with code {res.status_code}, using fallback estimation.")
+            counts["commits"] = "40+"
+    except Exception as e:
+        print(f"Error fetching commits count: {e}")
+        counts["commits"] = "40+"
+        
+    # Fetch PRs count
+    try:
+        res = requests.get(f"https://api.github.com/search/issues?q=author:{username}+type:pr", headers=headers, timeout=10)
+        if res.status_code == 200:
+            counts["prs"] = res.json().get("total_count", 0)
+        else:
+            counts["prs"] = "5+"
+    except Exception as e:
+        print(f"Error fetching PRs count: {e}")
+        counts["prs"] = "5+"
+        
+    # Fetch Issues count
+    try:
+        res = requests.get(f"https://api.github.com/search/issues?q=author:{username}+type:issue", headers=headers, timeout=10)
+        if res.status_code == 200:
+            counts["issues"] = res.json().get("total_count", 0)
+        else:
+            counts["issues"] = "0"
+    except Exception as e:
+        print(f"Error fetching issues count: {e}")
+        counts["issues"] = "0"
+        
+    # Fetch Reviews count
+    try:
+        res = requests.get(f"https://api.github.com/search/issues?q=reviewed-by:{username}+type:pr", headers=headers, timeout=10)
+        if res.status_code == 200:
+            counts["reviews"] = res.json().get("total_count", 0)
+        else:
+            counts["reviews"] = "0"
+    except Exception as e:
+        print(f"Error fetching reviews count: {e}")
+        counts["reviews"] = "0"
+        
+    return counts
+
 def fetch_rest_fallback(username):
     """Fetches user details and repositories using REST API (no token required)."""
     print("Using REST API fallback for gathering stats...")
@@ -146,13 +206,15 @@ def fetch_rest_fallback(username):
         } if repos_by_created else None
     }
     
-    # Estimate commits/PRs/issues since REST requires token for precise counts
-    stats["total_commits"] = "1,000+" # Placeholder for unauthenticated runs
-    stats["total_prs"] = "100+"
-    stats["total_issues"] = "50+"
-    stats["total_reviews"] = "20+"
+    # Fetch real counts from GitHub Search API instead of estimates
+    counts = fetch_real_counts_fallback(username)
+    stats["total_commits"] = str(counts["commits"])
+    stats["total_prs"] = str(counts["prs"])
+    stats["total_issues"] = str(counts["issues"])
+    stats["total_reviews"] = str(counts["reviews"])
     
     return stats
+
 
 def fetch_graphql_stats(username):
     """Fetches comprehensive user statistics using GraphQL API."""

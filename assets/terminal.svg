@@ -91,10 +91,10 @@
   <text x="35" y="1066" class="stats-text" xml:space="preserve">
     <tspan x="35" dy="0em" class="title">ashuujha@developer-os</tspan>
     <tspan x="35" dy="1.2em" fill="#30363d">---------------------</tspan>
-    <tspan x="35" dy="1.2em"><tspan class="key">OS</tspan>: Linux (Ubuntu / Alpine / Debian)</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key">OS</tspan>: Ubuntu 26.04 / Windows 11</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Uptime (GitHub age)</tspan>: 1 year, 8 months, 27 days</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Shell</tspan>: bash / zsh / fish</tspan>
-    <tspan x="35" dy="1.2em"><tspan class="key">Editor</tspan>: Neovim / VS Code</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key">Editor</tspan>: VS Code / Antigravity / Zed</tspan>
     <tspan x="35" dy="1.2em"> </tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Languages</tspan>: Go, Python, Rust, TypeScript, JavaScript, C++</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Frameworks</tspan>: Node.js, Express, FastAPI, React, Next.js, Vue.js</tspan>
@@ -102,16 +102,16 @@
     <tspan x="35" dy="1.2em"><tspan class="key">DevOps/CI</tspan>: Docker, Kubernetes, GitHub Actions</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Cloud</tspan>: AWS, GCP</tspan>
     <tspan x="35" dy="1.2em"> </tspan>
-    <tspan x="35" dy="1.2em"><tspan class="key">Current Focus</tspan>: Building scalable, high-performance systems.</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key">Current Focus</tspan>: CSE Student (AI &amp; ML)</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">Location</tspan>: Kolkata</tspan>
     <tspan x="35" dy="1.2em"> </tspan>
     <tspan x="35" dy="1.2em"><tspan class="key">GitHub Stats</tspan>: </tspan>
     <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Repositories</tspan>: 6</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Followers</tspan>: 4</tspan>
     <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Following</tspan>: 7</tspan>
-    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Commits</tspan>: 1,000+</tspan>
-    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Stars Earned</tspan>: 3</tspan>
-    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Pull Requests</tspan>: 100+</tspan>
-    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Issues/Reviews</tspan>: 50+ / 20+</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Commits</tspan>: 48</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Stars Earned</tspan>: 2</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Pull Requests</tspan>: 5</tspan>
+    <tspan x="35" dy="1.2em"><tspan class="key" fill="#8b949e">  Issues/Reviews</tspan>: 0 / 0</tspan>
   </text>
 </svg>

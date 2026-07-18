@@ -70,10 +70,10 @@ def format_neofetch_lines(config, stats):
     lines = [
         f"{username}@developer-os",
         "-" * (len(username) + 13),
-        ("OS", "Linux (Ubuntu / Alpine / Debian)"),
+        ("OS", "Ubuntu 26.04 / Windows 11"),
         ("Uptime (GitHub age)", stats.get("uptime", "Unknown")),
         ("Shell", "bash / zsh / fish"),
-        ("Editor", "Neovim / VS Code"),
+        ("Editor", "VS Code / Antigravity / Zed"),
         "",
         ("Languages", languages),
         ("Frameworks", frameworks),
@@ -114,7 +114,7 @@ def generate_text_card(ascii_lines, neofetch_lines):
             
     return "\n".join(card_lines)
 
-def generate_svg_card(ascii_lines, neofetch_lines):
+def generate_svg_card(ascii_lines, neofetch_lines, username="ashuujha"):
     """Generates a premium, responsive SVG representing the Linux Terminal Card in a single-column layout."""
     # Settings
     font_family = "SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace"
@@ -164,7 +164,7 @@ def generate_svg_card(ascii_lines, neofetch_lines):
     svg.append('  <circle cx="25" cy="22" r="6" fill="#ff5f56" class="control-dot" />')
     svg.append('  <circle cx="45" cy="22" r="6" fill="#ffbd2e" class="control-dot" />')
     svg.append('  <circle cx="65" cy="22" r="6" fill="#27c93f" class="control-dot" />')
-    svg.append(f'  <text x="{width // 2}" y="26" text-anchor="middle" class="stats-text header-text">ashuujha@developer-os:~</text>')
+    svg.append(f'  <text x="{width // 2}" y="26" text-anchor="middle" class="stats-text header-text">{username}@developer-os:~</text>')
     svg.append(f'  <line x1="0" y1="40" x2="{width}" y2="40" stroke="{border_color}" stroke-width="1.5" />')
     
     # Render ASCII Art (Stacked on top)
@@ -225,7 +225,8 @@ def main():
     print(f"Plain text terminal card saved to {text_card_path}")
     
     # 2. Generate SVG card
-    svg_card = generate_svg_card(ascii_lines, neofetch_lines)
+    username = config.get("github_username", "ashuujha")
+    svg_card = generate_svg_card(ascii_lines, neofetch_lines, username)
     svg_card_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "terminal.svg")
     with open(svg_card_path, "w") as f:
         f.write(svg_card)

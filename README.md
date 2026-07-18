@@ -1,11 +1,20 @@
 <div align="center">
-  <!-- Animated Typing Header -->
-  <img src="./assets/header.svg" width="100%" alt="Developer OS Header" />
+  <h1>👋 I'm Ashutosh Jha</h1>
+  <h3>3D Animator & Creative Developer</h3>
+  <p>
+    <a href="https://discord.com/users/ashuujha" target="_blank"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+    <a href="https://www.instagram.com/ashuu0001__" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+    <a href="https://www.linkedin.com/in/ashuu0001" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <a href="https://x.com/ashuu24__" target="_blank"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+    <a href="mailto:atulashu38@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  </p>
 </div>
 
 <br />
 
 <!-- Terminal Neofetch Card -->
+## 🖥️ System Information
+
 <div align="center">
   <img src="./assets/terminal.svg" width="100%" alt="Neofetch Terminal" />
 </div>
@@ -13,71 +22,11 @@
 <br />
 
 <!-- About Section -->
-## 🖥️ System Information & About
+## 👤 About
 
-> Building high-performance backend systems, microservices, and robust cloud infrastructure.
-> Actively maintaining and contributing to open-source software and tools.
-> Designing intelligent systems powered by AI/ML and automation workflows.
-> Committed to continuous learning, architectural excellence, and developer productivity.
-
----
-
-<!-- Tech Stack Section -->
-## 🛠️ Technology Stack & Capabilities
-
-- **💻 Languages**:<br /><kbd>Go</kbd> <kbd>Python</kbd> <kbd>Rust</kbd> <kbd>TypeScript</kbd> <kbd>JavaScript</kbd> <kbd>C++</kbd> <kbd>SQL</kbd> <kbd>Bash</kbd>
-
-- **⚙️ Backend**:<br /><kbd>Node.js</kbd> <kbd>Express</kbd> <kbd>FastAPI</kbd> <kbd>Gin</kbd> <kbd>gRPC</kbd> <kbd>GraphQL</kbd>
-
-- **🎨 Frontend**:<br /><kbd>React</kbd> <kbd>Next.js</kbd> <kbd>Vue.js</kbd> <kbd>TailwindCSS</kbd> <kbd>HTML5/CSS3</kbd>
-
-- **💾 Databases**:<br /><kbd>PostgreSQL</kbd> <kbd>MongoDB</kbd> <kbd>Redis</kbd> <kbd>MySQL</kbd> <kbd>Elasticsearch</kbd>
-
-- **☁️ Cloud Platforms**:<br /><kbd>AWS</kbd> <kbd>GCP</kbd> <kbd>Azure</kbd> <kbd>Cloudflare</kbd>
-
-- **♾️ DevOps & CI/CD**:<br /><kbd>Docker</kbd> <kbd>Kubernetes</kbd> <kbd>GitHub Actions</kbd> <kbd>Terraform</kbd> <kbd>Ansible</kbd> <kbd>Linux</kbd>
-
-- **🧠 AI / ML**:<br /><kbd>PyTorch</kbd> <kbd>TensorFlow</kbd> <kbd>scikit-learn</kbd> <kbd>Hugging Face</kbd> <kbd>LangChain</kbd>
-
-- **🔧 Dev Tools**:<br /><kbd>Git</kbd> <kbd>Neovim</kbd> <kbd>VS Code</kbd> <kbd>Postman</kbd> <kbd>Wireshark</kbd>
-
-- **📚 Learning Focus**:<br /><kbd>WebAssembly</kbd> <kbd>Zig</kbd> <kbd>eBPF</kbd> <kbd>Rust Macro Systems</kbd>
-
-
----
-
-<!-- Now Building / Current Focus & Featured Projects -->
-## 🚀 Featured Projects & Focus
-
-### 🌟 Starred & Highlighted Repositories
-
-#### 📂 [Ashu](https://github.com/ashuujha/Ashu)
-> 
-- **Stack:** Solidity
-- **Metrics:** ★ 1
-
-#### 📂 [ashuu1408](https://github.com/ashuujha/ashuu1408)
-> 
-- **Stack:** Python
-- **Metrics:** ★ 1
-
-#### 📂 [js](https://github.com/ashuujha/js)
-> A code repo for javascript series
-- **Stack:** JavaScript
-- **Metrics:** ★ 1
-
-#### 📂 [ashu-sup](https://github.com/ashuujha/ashu-sup)
-> 
-- **Stack:** TypeScript
-- **Metrics:** ★ 0
-
-### ⚡ Active Focus
-
-#### 📂 [ashuu1408](https://github.com/ashuujha/ashuu1408)
-> 
-- **Stack:** Python
-- **Last Updated:** July 2026 (Automated detection)
-
+> Currently learning and building projects using JavaScript and React, with a growing interest in Artificial Intelligence and Machine Learning.
+> I believe in learning by building and constantly experimenting with new ideas.
+> Started working as a freelancer and later expanded into an agency model, now managing regular active clients across India.
 
 ---
 
@@ -98,65 +47,25 @@
 
 <br />
 
-<!-- Contribution Graph (Snake Animation) -->
-### 🐍 Contribution Activity
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake-light.svg" />
-    <img src="./assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" width="100%" />
-  </picture>
-</div>
-
----
-
-<!-- Coding Analytics (WakaTime / Metrics) -->
-## 📈 Coding Insights & Analytics
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=ashuujha&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" alt="WakaTime Stats" width="80%" />
-</div>
-
 ---
 
 <!-- Recent Activity -->
 ## 🗂️ Latest Kernel Logs (Recent Activity)
 
-- ⭐ Starred [ashuujha/ashuu1408](https://github.com/ashuujha/ashuu1408) (Jul 18, 2026)
 - 🔀 Merged PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/7) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
 - 🔀 Opened PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/7) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
 - 🔀 Merged PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/6) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
 - 🔀 Opened PR [feat: added new seed](https://github.com/tourtravelsmotherindia/motherindiatourtravels/pull/6) in [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 13, 2026)
 - ⭐ Starred [tourtravelsmotherindia/motherindiatourtravels](https://github.com/tourtravelsmotherindia/motherindiatourtravels) (Jul 12, 2026)
+- ⭐ Starred [Pradeeeeeeeep/ISRO-challenge-7](https://github.com/Pradeeeeeeeep/ISRO-challenge-7) (Jul 05, 2026)
 
 ---
 
 <!-- Blog & YouTube Section (Conditional) -->
 
 
----
-
-<!-- Achievements & Trophies -->
-## 🏆 System Achievements
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ashuujha&amp;theme=onedark&amp;no-bg=true&amp;no-border=true&amp;column=7" alt="GitHub Trophies" width="100%" />
-</div>
-
-<br />
-
----
-
-<!-- Connect / Socials -->
-## 🔌 Ports / External Connections
-
-<div align="center">
-  [● LINKEDIN](https://linkedin.com/in/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● TWITTER](https://twitter.com/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● PORTFOLIO](https://ashuujha.github.io) &nbsp;&nbsp;&nbsp;&nbsp; [● EMAIL](ashuujha@gmail.com) &nbsp;&nbsp;&nbsp;&nbsp; [● DISCORD](https://discord.com/users/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● INSTAGRAM](https://instagram.com/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● LEETCODE](https://leetcode.com/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● CODEFORCES](https://codeforces.com/profile/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● HACKERRANK](https://hackerrank.com/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● YOUTUBE](https://youtube.com/@ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● HASHNODE](https://hashnode.com/@ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● MEDIUM](https://medium.com/@ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● DEVTO](https://dev.to/ashuujha) &nbsp;&nbsp;&nbsp;&nbsp; [● TELEGRAM](https://t.me/ashuujha)
-</div>
-
 <br />
 
 <div align="center">
-  <sub>Last updated: <i>2026-07-18 09:31:31 UTC</i> | System status: <b>Operational</b></sub>
+  <sub>Last updated: <i>2026-07-18 10:10:12 UTC</i> | System status: <b>Operational</b></sub>
 </div>

@@ -72,10 +72,10 @@ mmpqqpq0XJO0Q0CXx1(tr1"aC[fjq$$$$$$$$Ot$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 ashuujha@developer-os
 ---------------------
-OS: Linux (Ubuntu / Alpine / Debian)
+OS: Ubuntu 26.04 / Windows 11
 Uptime (GitHub age): 1 year, 8 months, 27 days
 Shell: bash / zsh / fish
-Editor: Neovim / VS Code
+Editor: VS Code / Antigravity / Zed
 
 Languages: Go, Python, Rust, TypeScript, JavaScript, C++
 Frameworks: Node.js, Express, FastAPI, React, Next.js, Vue.js
@@ -83,14 +83,14 @@ Databases: PostgreSQL, MongoDB, Redis
 DevOps/CI: Docker, Kubernetes, GitHub Actions
 Cloud: AWS, GCP
 
-Current Focus: Building scalable, high-performance systems.
+Current Focus: CSE Student (AI & ML)
 Location: Kolkata
 
 GitHub Stats: 
   Repositories: 6
   Followers: 4
   Following: 7
-  Commits: 1,000+
-  Stars Earned: 3
-  Pull Requests: 100+
-  Issues/Reviews: 50+ / 20+
+  Commits: 48
+  Stars Earned: 2
+  Pull Requests: 5
+  Issues/Reviews: 0 / 0
