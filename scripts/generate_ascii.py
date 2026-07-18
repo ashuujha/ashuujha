@@ -102,6 +102,19 @@ if __name__ == "__main__":
         config = {"github_username": "ashuu1408"}
         
     username = config.get("github_username", "ashuu1408")
+    
+    # Check if a custom ascii.txt exists in the root directory
+    root_ascii_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "ascii.txt")
+    ascii_txt_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "ascii_art.txt")
+    
+    if os.path.exists(root_ascii_path):
+        print(f"Custom ascii.txt found in root. Copying it to {ascii_txt_path}...")
+        import shutil
+        import sys
+        os.makedirs(os.path.dirname(ascii_txt_path), exist_ok=True)
+        shutil.copyfile(root_ascii_path, ascii_txt_path)
+        sys.exit(0)
+        
     avatar_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "avatar.png")
     
     # Make sure download is successful or fallback to existing
