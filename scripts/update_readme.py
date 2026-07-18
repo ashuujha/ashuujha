@@ -360,7 +360,7 @@ def main():
     wakatime_user = config.get("wakatime_username", "")
     if wakatime_user:
         waka_md = (
-            f'<img src="https://github-readme-stats.vercel.app/api/wakatime?username={wakatime_user}&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="WakaTime Stats" width="80%" />'
+            f'<img src="https://github-readme-stats.vercel.app/api/wakatime?username={wakatime_user}&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" alt="WakaTime Stats" width="80%" />'
         )
     else:
         waka_md = "*(WakaTime analytics not configured)*"

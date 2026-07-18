@@ -1,13 +1,13 @@
 <div align="center">
   <!-- Animated Typing Header -->
-  <img src="assets/header.svg" width="100%" alt="Developer OS Header" />
+  <img src="./assets/header.svg" width="100%" alt="Developer OS Header" />
 </div>
 
 <br />
 
 <!-- Terminal Neofetch Card -->
 <div align="center">
-  <img src="assets/terminal.svg" width="100%" alt="Neofetch Terminal" />
+  <img src="./assets/terminal.svg" width="100%" alt="Neofetch Terminal" />
 </div>
 
 <br />
@@ -85,15 +85,15 @@
 ## 📊 Live GitHub Metrics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ashuu1408&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ashuu1408&theme=dark&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideNums=c9d1d9&sideLabels=8b949e" alt="GitHub Streak" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ashuu1408&amp;show_icons=true&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;icon_color=58a6ff&amp;text_color=c9d1d9" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ashuu1408&amp;theme=dark&amp;hide_border=true&amp;background=0d1117&amp;ring=58a6ff&amp;fire=58a6ff&amp;currStreakLabel=58a6ff&amp;sideNums=c9d1d9&amp;sideLabels=8b949e" alt="GitHub Streak" width="48%" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashuu1408&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="Top Languages" width="48%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ashuu1408&theme=github_dark" alt="Profile Details" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashuu1408&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" alt="Top Languages" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ashuu1408&amp;theme=github_dark" alt="Profile Details" width="48%" />
 </div>
 
 <br />
@@ -102,7 +102,11 @@
 ### 🐍 Contribution Activity
 
 <div align="center">
-  <img src="assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake-light.svg" />
+    <img src="./assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" width="100%" />
+  </picture>
 </div>
 
 ---
@@ -111,7 +115,7 @@
 ## 📈 Coding Insights & Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=ashuu1408&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="WakaTime Stats" width="80%" />
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=ashuu1408&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" alt="WakaTime Stats" width="80%" />
 </div>
 
 ---
@@ -137,7 +141,7 @@
 ## 🏆 System Achievements
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ashuu1408&theme=onedark&no-bg=true&no-border=true&column=7" alt="GitHub Trophies" width="100%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=ashuu1408&amp;theme=onedark&amp;no-bg=true&amp;no-border=true&amp;column=7" alt="GitHub Trophies" width="100%" />
 </div>
 
 <br />
@@ -154,5 +158,5 @@
 <br />
 
 <div align="center">
-  <sub>Last updated: <i>2026-07-18 09:00:53 UTC</i> | System status: <b>Operational</b></sub>
+  <sub>Last updated: <i>2026-07-18 09:10:49 UTC</i> | System status: <b>Operational</b></sub>
 </div>

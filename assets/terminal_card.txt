@@ -1,69 +1,96 @@
-                                    .>{1|?+++)}!l.                                                                                   ashuu1408@developer-os
-                                I|rvZQjftnvmLru\1\){]!`                                                                              ----------------------
-                              'n0Ynq0JpOdakBBo&adqYJZYxr_                                                                            OS: Linux (Ubuntu / Alpine / Debian)
-                           !^\CZCJLOwpq*$B@$@$$@WMW%&bhmv/                                                                           Uptime (GitHub age): 1 year, 8 months, 27 days
-                          \/cXQqb*W8$%B$$$$$$$$$$$$&bmhqXL-                                                                          Shell: bash / zsh / fish
-                         mmuOb&%W$$$$$$$$$$$$$$$#Zu);;tXcu/                                                                          Editor: Neovim / VS Code
-                        \8Zp&&@$$$$$$$$$$$%#dOJx{<^    {vj\?                                                                         
-                         mb#%$$$$$$$$$%Mb0uf(-<I`       '/\/.                                                                        Languages: Go, Python, Rust, TypeScript, JavaScript, C++
-                     '<{-nm#$$$$$$$8*hdwX\?~iI",~(v0Cr]I  ^(x                                                                        Frameworks: Node.js, Express, FastAPI, React, Next.js, Vue.js
-                      !coW%B&$$$$@MbLn(-<i!l!<\XkWkz1i;";   {}                                                                       Databases: PostgreSQL, MongoDB, Redis
-                    .[,]} }Wo$B$&bZn|(jzvrt1[}nJLJC0Zmr{1l   +                                                                       DevOps/CI: Docker, Kubernetes, GitHub Actions
-                       !   bBB$$MYLwo&BBoqZXt+l\Ld%o8Wz{:      .,j:                                                                  Cloud: AWS, GCP
-                            aM%$*YoZnjjnQbhaz'  I]){]~l         ; \^                                                                 
-                             q%WavXxuXq8%hWbj'                  ;/ ?                                                                 Current Focus: Building scalable, high-performance systems.
-                              O%o|jXdhbdwLr[?:       '           + ,                                                                 Location: Kolkata
-                               O@f-||(({-I`--<}}_xk{!;!><!"                                                                          
-                                Z0l<I".   <x1z@wJXu|>'^<11}+I'    ^                                                                  GitHub Stats: 
-                              +_]X-ii     f\rQZv)xt/1fOMw|+i,          '(Z[                                                            Repositories: 6
-                              wXffv+_      1jJJJXLwOqJJkbu-l;"" , bOcj0$$*Yc^                                                          Followers: 4
-                               0t(Z\[       b@#oamct1]>,`"<[+~+~+) Z$ahuh-cJun}!'                                                      Following: 7
-                                /jt/t{/fjjjxObbJxfnJmY\~iI,I>?{(0n_:B%ZpWu/|tjt({~\zw$v;                                               Commits: 1,000+
-                                 i)}tf?utfjtr/-]1tcnx[    '^~\X*bj|[t%qW$Xn///rjtfjr_{&X}]}"l                                          Stars Earned: 2
-                                   `'  _zvxxxj|1-<l;i]11}(|xZ&$o0cx/vB#$$t1rvXCJJLw|(w$W/[]}?]"                                        Pull Requests: 100+
-                                         {czCXcx({|cQb8%$$$$$BbOCzvuW%$$$0jYCC0do#utB$rpfvut/Y/[                                       Issues/Reviews: 50+ / 20+
-                                           Wba#&&@$$$$$$$$$BodqOCCJb$8$$$&ZZmqkb$#|CqrxwX0zZknuQJ);                                  
-                                         "$8a$%$$$$$$$$B8&W#abqOZpq$$$$$$Wm0p#@$$XujYvqo0X%$uO*hOCuj-                                
-                                        +$$JB$$$$8o*MWWWW&WMohbpkb&$$$8$$&qbo8$$hYXxmO$8wZ$J0BMpZQccI                                
-                                     ;<(@$Wm$$$$$$$$#M&&8&W&W*okkh$$$$$$@Wp*@$@Wkq0pmk$*#okM$%am0YZ_                                 
-                                    fYuZ$$wa$$$$$$$$$$8WW8%%W*hbk#$$$$$$$bb8$$@Mahbpm%$a@@$$B#okw#}                                  
-                                    a0Y%$$m$$$$$$$$$$$$@MahhkkhkCo$$$$$$$Wd%$@$###oab$$8$$$$$$Mk%{                                   
-                                   _WOp$$@p$$$$$$$$$$$$$8dmZOXj{<$$$8@@$$Mb8B$@&W%bko$$$$$$$$%&%l                                    
-.                                  kop#$$%a$$$$$$$$$$$$$*dY1I","r$$$$$$$$aw#a$$88Wkb$$$$$$$$$$#                                      
-;:,`'``'                          J##a*$$$8$$$$$$$$$$$$%hcvZa%$W$$$@%$$$$&kkbh&88%aW$$$$$$$$$q                                       
-!!:,`"^"^`                       f&h#o%W$$M$$$$$$$$$$$$%k?[n*${L$$$&$$#$$$okha#%&*p%$$$$$$$$Z                                        
->il;,,:lI""^.                   [&Wk&M$B$$$$$$$$$$$$$$$$d!_ |- $$$$$$$88$$*dmwda##h$$$$$$$$j      ^l!,                               
->>iII;Ii!II;^^"`.               Z8h##8$BM$$%$$$$$$$$$$$$bi+[X Q$$$$$$$BB$$$BkboB&&a$$$$$$j    .^^     ','      .           ..'`^"^   
-+>i!lIli>i!I:,,"",'            ]8W*aW@$$$$$$$$$$$$$$$$$$q!1z< $$$$$$$$$$$$$$M*WMMaM$$$$)                       ^ ..`'.....'^"""""^   
-++~ii!>~~<>llI::,,""`          c$@*#@$$$$&$$W$$$$$$$$$$$m+|1 Z$$$$@$$$$$B$$$$%&#%@$$$j                         "'``^^``""""",,,:^"   
-_+++ii>~++~><iIIIlII"I         j$@*#%%$$$$$$$$$$$$$$$$$$n}?!i$$$$$$$$$$$$$$$$$$$$$$$<                          I^^""""::::;II;;,",   
-+-__+>i+?-+_+<<<>iiI+        ' m$$$$$$$$$$B$$$$$$$$$$$$$1[?,n$$$$$$$$$$$$$$$$$$$$$$~                           l",:,",::;;I;I:;I;;   
-~+__-~i<_?-_+~<~<<>_^       .`>w$$$@$$$B$$$B$$$$$$$$$$$$|li"/$$$$$$$$$$$$$$$$$$$$$                             I^",,,,,:lI;IllI;:I   
-?-_++-~<_++-__+~~>_" ;l`     ^"]$$$B$$$$$$$$$$$$$$$$$$$$) \I?$$$$$$$$$$$$$$$$$$$C  `     "!ii~<<I^             ~Illi!i>>>i>>~+i!i<   
-[??_~~++??_??__-_+}             u$$$$$$$$$$$$$$$$$$$$$$$${1)!$$$$$$$$$$$$$$$$$$~  ^;?xcj\}~;`                  [>><+_+~_+__++i~_+-   
-{]]}]???-__?+_?-?[+             v$$$$$$$$$$$$$$$$$$$$$$$$$w[?$$$$$$$$$$$$$$$$$( i-/uc{               .I:"      1+__+++_-+~<>+_+i+~   
-)([][?--__~+--??_|             _za$$$$$$$$$$$$$$$$$$$$$$$$$B]$$$$$$$$$$$$$$$$$ l+(/_        ^,;:^        .     (<__+<_~~+tjt/rr(nj   
-]){]-]??--?__-]?{            [\xj-Z$$$$$$$$$$$$$$$$$$$$$$$$$dM$$$$$$$$$$$$$$$C <?{"             `;;^'          ?1]il~l  ,i<~<+?-1}   
-[?{}]1[{{}}[[__])        `'`;^.itJ_$$$$$$$$$$$$$$$$$$$$$$$$$$&$$$$$$$$$$$$$$$<.])>!`                           tt(({(1{1}?}?~><!~+   
-}[1{[[{}}1}}}}_1i          .'  !I}nM$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ `'  `                            t\)(({}|\\)/|)|()1|   
-}]1)({1)}}{}[{}\    .'    .;<+[?i [a$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Y,                                ^   x|\t|{}]1t((t(truz   
-|1)))){()}}[]]tl                   u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$0?           `~`                      .   Xjx/\((\|fxfzYcJC   
-(|||//){((1)))[                    "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$0         ,        :   `l^                    v/vZvXrjCvftjXYX   
-|//(||\/)))()n         '.^",,;III;^;<$$$$$$$$$$$$$$$$$$$$$$$$$Mmx],'                    .,^. :!,'         f+      ]Lvxxrrrrfn/jvvJ   
-/fvj\\\(|)))((                     :]/$$$kx0$$&OJCf\\\(}_<I".      ^            ?   '    ","             l$$)      JtvcLQOvrzJ0YcY   
-xxrnxxnft\))\~ ";  ``   ,:^ .`   ;;Y$$*t I*$c,  >'          ...'^",:?       ^    ],                      $$$$Y     YXnXZLCXQJzCLvX   
-nuxuvunuxxt({!'! ,!^   lI"I~-|z?'`vjXL: Q$ol ^:("""""``^'`'`^",:Ilii+}      ^'    i{<:,I^             . k$$$$$o<   1ZzYCLOLcnuzc0O   
-cvvccuuuxrnj/l  '    I!l<<l   ;<l>d@uI /$n .`,):,!!i<>>>!i!!!!!iii>><[t`     I`    `                 ' f$$$$$$$$*' `dJXc0LCYz00pCn   
-vnzznxrjrtjfx^     >_~~~l<   `l    ``,?W$Z_<I{>^l<_][{1)))1{{{{{{{{{{1j(  `.  ],               .''"^' j$$$8W%$$$$$/ XkYLOnXQmdawQ0   
-JJYXzcvvjjff)    ."       .  !         >v$#w\m]~!>~]1\tjjxrjjjjjjjjjjrfX-  `l  {[[+++!,,,::,,,:`^;I. w$$$$$$@Wbh@$$/ mCZYCZdkbQcLL   
-jujuf\jj)cftX   '      , .  "         <i. `i{CwwOYvrjjttfjxnnnnnxxrjrrxxLt,'^<<!<|x{?(++>ii>i!II!;'?$$$$$$$$$$$Wdpk$/nmCwdOQm0CZZO   
-1t/1)\c/1{|\t  `     :`    `        `|I ''`'`^!}xQbMW*hdZ0CYXccccczXXzXYYZY}I;+]?-1j|1j[--+<><?}!1W$$$$$$$$$$$@B%%@W8C0aQCwbpYvZZX   
-t[|}.;,,"{z/| "",  ll`       I^.',^-Y_!_+~+_?}1\fvCqk#8B$$$@%M*hbpwmmwqddphWaz)[?)|}<!)Ou/(1]_> v$$$$$$$$$odpZCJJCOhWo0wzcYmYJmOCO   
-nvu}'  ,?{x/v.'`..,^..   . ^<I"l!!/*\1((||/rzXOwppmZZOZmqpk#%@$$$$$$$$$$$@B@$$MYc|\r/-.^OW%ducuv$$$$$$$$##MokbpOQCJnruuxuz0Jppqkpq   
-j-_]>+/i?\/fx    '  `  `;:i~?I?-~)BuxnvcYLZqpqmOCXcvvcXCL0mdoB$$$$$$$$$$$$$$$$$$$$$Ob#Z>;Wu$$$$$$$$$$$$$$@8&aakdhm00OOQvunx/xnnZdq   
-j\+{?[)[?rfrf         ^l+-(|}[t~]8qOwwqpwwOLYcnnuccYL0Zqh&$$$$$$$$$$$$$$$$$$$$$$$$$$$&8p;_v$$$$$$$$$$$$$$$$$$$$BMa*hdZQCCYXJvn1)tc   
-fXJxxnYJx)jjc.    .:li:l_)j\)t?]o$bdwOLJzcvvcXJQ0mpaW$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@$$@%#*okppmq0LLJYnf   
-\YQL0ZYmmuJYZ_ I^l]_}_!t?txjv{fO$dm0CLL0Zmwqpdh#B$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$M8%W%MB#qpoqQqZwO   
-vZpqZmzcYQ0Cvz>l-}]<|("bXvnX1zO$adppdbkkka#&$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$B8WM&#pka*pOmkwzY   
-LZwdqpO0JJJvXC0[~}(|/\,pLfr/f*$&ahkhhMa8$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$B&WWWooaqO0CJ   
-mmpqqpq0XJO0Q0CXx1(tr1"aC[fjq$$$$$$$$Ot$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$8$$%8$@&#o*CL|   
+                                    .>{1|?+++)}!l.
+                                I|rvZQjftnvmLru\1\){]!`
+                              'n0Ynq0JpOdakBBo&adqYJZYxr_
+                           !^\CZCJLOwpq*$B@$@$$@WMW%&bhmv/
+                          \/cXQqb*W8$%B$$$$$$$$$$$$&bmhqXL-
+                         mmuOb&%W$$$$$$$$$$$$$$$#Zu);;tXcu/
+                        \8Zp&&@$$$$$$$$$$$%#dOJx{<^    {vj\?
+                         mb#%$$$$$$$$$%Mb0uf(-<I`       '/\/.
+                     '<{-nm#$$$$$$$8*hdwX\?~iI",~(v0Cr]I  ^(x
+                      !coW%B&$$$$@MbLn(-<i!l!<\XkWkz1i;";   {}
+                    .[,]} }Wo$B$&bZn|(jzvrt1[}nJLJC0Zmr{1l   +
+                       !   bBB$$MYLwo&BBoqZXt+l\Ld%o8Wz{:      .,j:
+                            aM%$*YoZnjjnQbhaz'  I]){]~l         ; \^
+                             q%WavXxuXq8%hWbj'                  ;/ ?
+                              O%o|jXdhbdwLr[?:       '           + ,
+                               O@f-||(({-I`--<}}_xk{!;!><!"
+                                Z0l<I".   <x1z@wJXu|>'^<11}+I'    ^
+                              +_]X-ii     f\rQZv)xt/1fOMw|+i,          '(Z[
+                              wXffv+_      1jJJJXLwOqJJkbu-l;"" , bOcj0$$*Yc^
+                               0t(Z\[       b@#oamct1]>,`"<[+~+~+) Z$ahuh-cJun}!'
+                                /jt/t{/fjjjxObbJxfnJmY\~iI,I>?{(0n_:B%ZpWu/|tjt({~\zw$v;
+                                 i)}tf?utfjtr/-]1tcnx[    '^~\X*bj|[t%qW$Xn///rjtfjr_{&X}]}"l
+                                   `'  _zvxxxj|1-<l;i]11}(|xZ&$o0cx/vB#$$t1rvXCJJLw|(w$W/[]}?]"
+                                         {czCXcx({|cQb8%$$$$$BbOCzvuW%$$$0jYCC0do#utB$rpfvut/Y/[
+                                           Wba#&&@$$$$$$$$$BodqOCCJb$8$$$&ZZmqkb$#|CqrxwX0zZknuQJ);
+                                         "$8a$%$$$$$$$$B8&W#abqOZpq$$$$$$Wm0p#@$$XujYvqo0X%$uO*hOCuj-
+                                        +$$JB$$$$8o*MWWWW&WMohbpkb&$$$8$$&qbo8$$hYXxmO$8wZ$J0BMpZQccI
+                                     ;<(@$Wm$$$$$$$$#M&&8&W&W*okkh$$$$$$@Wp*@$@Wkq0pmk$*#okM$%am0YZ_
+                                    fYuZ$$wa$$$$$$$$$$8WW8%%W*hbk#$$$$$$$bb8$$@Mahbpm%$a@@$$B#okw#}
+                                    a0Y%$$m$$$$$$$$$$$$@MahhkkhkCo$$$$$$$Wd%$@$###oab$$8$$$$$$Mk%{
+                                   _WOp$$@p$$$$$$$$$$$$$8dmZOXj{<$$$8@@$$Mb8B$@&W%bko$$$$$$$$%&%l
+.                                  kop#$$%a$$$$$$$$$$$$$*dY1I","r$$$$$$$$aw#a$$88Wkb$$$$$$$$$$#
+;:,`'``'                          J##a*$$$8$$$$$$$$$$$$%hcvZa%$W$$$@%$$$$&kkbh&88%aW$$$$$$$$$q
+!!:,`"^"^`                       f&h#o%W$$M$$$$$$$$$$$$%k?[n*${L$$$&$$#$$$okha#%&*p%$$$$$$$$Z
+>il;,,:lI""^.                   [&Wk&M$B$$$$$$$$$$$$$$$$d!_ |- $$$$$$$88$$*dmwda##h$$$$$$$$j      ^l!,
+>>iII;Ii!II;^^"`.               Z8h##8$BM$$%$$$$$$$$$$$$bi+[X Q$$$$$$$BB$$$BkboB&&a$$$$$$j    .^^     ','      .           ..'`^"^
++>i!lIli>i!I:,,"",'            ]8W*aW@$$$$$$$$$$$$$$$$$$q!1z< $$$$$$$$$$$$$$M*WMMaM$$$$)                       ^ ..`'.....'^"""""^
+++~ii!>~~<>llI::,,""`          c$@*#@$$$$&$$W$$$$$$$$$$$m+|1 Z$$$$@$$$$$B$$$$%&#%@$$$j                         "'``^^``""""",,,:^"
+_+++ii>~++~><iIIIlII"I         j$@*#%%$$$$$$$$$$$$$$$$$$n}?!i$$$$$$$$$$$$$$$$$$$$$$$<                          I^^""""::::;II;;,",
++-__+>i+?-+_+<<<>iiI+        ' m$$$$$$$$$$B$$$$$$$$$$$$$1[?,n$$$$$$$$$$$$$$$$$$$$$$~                           l",:,",::;;I;I:;I;;
+~+__-~i<_?-_+~<~<<>_^       .`>w$$$@$$$B$$$B$$$$$$$$$$$$|li"/$$$$$$$$$$$$$$$$$$$$$                             I^",,,,,:lI;IllI;:I
+?-_++-~<_++-__+~~>_" ;l`     ^"]$$$B$$$$$$$$$$$$$$$$$$$$) \I?$$$$$$$$$$$$$$$$$$$C  `     "!ii~<<I^             ~Illi!i>>>i>>~+i!i<
+[??_~~++??_??__-_+}             u$$$$$$$$$$$$$$$$$$$$$$$${1)!$$$$$$$$$$$$$$$$$$~  ^;?xcj\}~;`                  [>><+_+~_+__++i~_+-
+{]]}]???-__?+_?-?[+             v$$$$$$$$$$$$$$$$$$$$$$$$$w[?$$$$$$$$$$$$$$$$$( i-/uc{               .I:"      1+__+++_-+~<>+_+i+~
+)([][?--__~+--??_|             _za$$$$$$$$$$$$$$$$$$$$$$$$$B]$$$$$$$$$$$$$$$$$ l+(/_        ^,;:^        .     (<__+<_~~+tjt/rr(nj
+]){]-]??--?__-]?{            [\xj-Z$$$$$$$$$$$$$$$$$$$$$$$$$dM$$$$$$$$$$$$$$$C <?{"             `;;^'          ?1]il~l  ,i<~<+?-1}
+[?{}]1[{{}}[[__])        `'`;^.itJ_$$$$$$$$$$$$$$$$$$$$$$$$$$&$$$$$$$$$$$$$$$<.])>!`                           tt(({(1{1}?}?~><!~+
+}[1{[[{}}1}}}}_1i          .'  !I}nM$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ `'  `                            t\)(({}|\\)/|)|()1|
+}]1)({1)}}{}[{}\    .'    .;<+[?i [a$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Y,                                ^   x|\t|{}]1t((t(truz
+|1)))){()}}[]]tl                   u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$0?           `~`                      .   Xjx/\((\|fxfzYcJC
+(|||//){((1)))[                    "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$0         ,        :   `l^                    v/vZvXrjCvftjXYX
+|//(||\/)))()n         '.^",,;III;^;<$$$$$$$$$$$$$$$$$$$$$$$$$Mmx],'                    .,^. :!,'         f+      ]Lvxxrrrrfn/jvvJ
+/fvj\\\(|)))((                     :]/$$$kx0$$&OJCf\\\(}_<I".      ^            ?   '    ","             l$$)      JtvcLQOvrzJ0YcY
+xxrnxxnft\))\~ ";  ``   ,:^ .`   ;;Y$$*t I*$c,  >'          ...'^",:?       ^    ],                      $$$$Y     YXnXZLCXQJzCLvX
+nuxuvunuxxt({!'! ,!^   lI"I~-|z?'`vjXL: Q$ol ^:("""""``^'`'`^",:Ilii+}      ^'    i{<:,I^             . k$$$$$o<   1ZzYCLOLcnuzc0O
+cvvccuuuxrnj/l  '    I!l<<l   ;<l>d@uI /$n .`,):,!!i<>>>!i!!!!!iii>><[t`     I`    `                 ' f$$$$$$$$*' `dJXc0LCYz00pCn
+vnzznxrjrtjfx^     >_~~~l<   `l    ``,?W$Z_<I{>^l<_][{1)))1{{{{{{{{{{1j(  `.  ],               .''"^' j$$$8W%$$$$$/ XkYLOnXQmdawQ0
+JJYXzcvvjjff)    ."       .  !         >v$#w\m]~!>~]1\tjjxrjjjjjjjjjjrfX-  `l  {[[+++!,,,::,,,:`^;I. w$$$$$$@Wbh@$$/ mCZYCZdkbQcLL
+jujuf\jj)cftX   '      , .  "         <i. `i{CwwOYvrjjttfjxnnnnnxxrjrrxxLt,'^<<!<|x{?(++>ii>i!II!;'?$$$$$$$$$$$Wdpk$/nmCwdOQm0CZZO
+1t/1)\c/1{|\t  `     :`    `        `|I ''`'`^!}xQbMW*hdZ0CYXccccczXXzXYYZY}I;+]?-1j|1j[--+<><?}!1W$$$$$$$$$$$@B%%@W8C0aQCwbpYvZZX
+t[|}.;,,"{z/| "",  ll`       I^.',^-Y_!_+~+_?}1\fvCqk#8B$$$@%M*hbpwmmwqddphWaz)[?)|}<!)Ou/(1]_> v$$$$$$$$$odpZCJJCOhWo0wzcYmYJmOCO
+nvu}'  ,?{x/v.'`..,^..   . ^<I"l!!/*\1((||/rzXOwppmZZOZmqpk#%@$$$$$$$$$$$@B@$$MYc|\r/-.^OW%ducuv$$$$$$$$##MokbpOQCJnruuxuz0Jppqkpq
+j-_]>+/i?\/fx    '  `  `;:i~?I?-~)BuxnvcYLZqpqmOCXcvvcXCL0mdoB$$$$$$$$$$$$$$$$$$$$$Ob#Z>;Wu$$$$$$$$$$$$$$@8&aakdhm00OOQvunx/xnnZdq
+j\+{?[)[?rfrf         ^l+-(|}[t~]8qOwwqpwwOLYcnnuccYL0Zqh&$$$$$$$$$$$$$$$$$$$$$$$$$$$&8p;_v$$$$$$$$$$$$$$$$$$$$BMa*hdZQCCYXJvn1)tc
+fXJxxnYJx)jjc.    .:li:l_)j\)t?]o$bdwOLJzcvvcXJQ0mpaW$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@$$@%#*okppmq0LLJYnf
+\YQL0ZYmmuJYZ_ I^l]_}_!t?txjv{fO$dm0CLL0Zmwqpdh#B$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$M8%W%MB#qpoqQqZwO
+vZpqZmzcYQ0Cvz>l-}]<|("bXvnX1zO$adppdbkkka#&$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$B8WM&#pka*pOmkwzY
+LZwdqpO0JJJvXC0[~}(|/\,pLfr/f*$&ahkhhMa8$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$B&WWWooaqO0CJ
+mmpqqpq0XJO0Q0CXx1(tr1"aC[fjq$$$$$$$$Ot$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$8$$%8$@&#o*CL|
+
+================================================================================
+
+ashuu1408@developer-os
+----------------------
+OS: Linux (Ubuntu / Alpine / Debian)
+Uptime (GitHub age): 1 year, 8 months, 27 days
+Shell: bash / zsh / fish
+Editor: Neovim / VS Code
+
+Languages: Go, Python, Rust, TypeScript, JavaScript, C++
+Frameworks: Node.js, Express, FastAPI, React, Next.js, Vue.js
+Databases: PostgreSQL, MongoDB, Redis
+DevOps/CI: Docker, Kubernetes, GitHub Actions
+Cloud: AWS, GCP
+
+Current Focus: Building scalable, high-performance systems.
+Location: Kolkata
+
+GitHub Stats: 
+  Repositories: 6
+  Followers: 4
+  Following: 7
+  Commits: 1,000+
+  Stars Earned: 2
+  Pull Requests: 100+
+  Issues/Reviews: 50+ / 20+

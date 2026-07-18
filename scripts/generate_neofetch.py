@@ -96,54 +96,26 @@ def format_neofetch_lines(config, stats):
     return lines
 
 def generate_text_card(ascii_lines, neofetch_lines):
-    """Generates a text-based side-by-side terminal layout."""
-    card_lines = []
-    
-    # Find max width of ASCII lines to pad them properly
-    max_ascii_w = max(len(l) for l in ascii_lines) if ascii_lines else 20
+    """Generates a text-based stacked terminal layout."""
+    card_lines = list(ascii_lines)
+    card_lines.append("")
+    card_lines.append("=" * 80)
+    card_lines.append("")
     
     # Process neofetch lines into strings
-    formatted_stats = []
     for line in neofetch_lines:
         if isinstance(line, tuple):
             k, v = line
-            formatted_stats.append(f"\033[38;5;75m{k}\033[0m: {v}")
+            card_lines.append(f"{k}: {v}")
         elif line == "":
-            formatted_stats.append("")
+            card_lines.append("")
         else:
-            # Highlight title header
-            if "@" in line:
-                formatted_stats.append(f"\033[1;38;5;81m{line}\033[0m")
-            else:
-                formatted_stats.append(line)
-                
-    # Plain text version for README markdown (without ANSI color codes since GitHub strips them)
-    plain_stats = []
-    for line in neofetch_lines:
-        if isinstance(line, tuple):
-            k, v = line
-            # Check if it's subhead
-            if k.startswith("  "):
-                plain_stats.append(f"{k}: {v}")
-            else:
-                plain_stats.append(f"{k}: {v}")
-        else:
-            plain_stats.append(line)
+            card_lines.append(line)
             
-    # Combine side-by-side
-    num_lines = max(len(ascii_lines), len(plain_stats))
-    for i in range(num_lines):
-        a_line = ascii_lines[i] if i < len(ascii_lines) else ""
-        s_line = plain_stats[i] if i < len(plain_stats) else ""
-        
-        # Pad ASCII line to max width
-        a_padded = a_line.ljust(max_ascii_w)
-        card_lines.append(f"{a_padded}   {s_line}")
-        
     return "\n".join(card_lines)
 
 def generate_svg_card(ascii_lines, neofetch_lines):
-    """Generates a premium, responsive SVG representing the Linux Terminal Card."""
+    """Generates a premium, responsive SVG representing the Linux Terminal Card in a stacked layout."""
     # Settings
     font_family = "SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace"
     text_color = "#c9d1d9"
@@ -153,18 +125,66 @@ def generate_svg_card(ascii_lines, neofetch_lines):
     bg_color = "#0d1117"
     
     width = 850
-    # Determine height based on lines
-    num_lines = max(len(ascii_lines), len(neofetch_lines))
-    line_height = 18
+    
+    # 1. Split neofetch lines into left (system info) and right (tech stack + github stats)
+    left_col = [
+        "🖥️ SYSTEM INFORMATION",
+        "========================="
+    ]
+    right_col = [
+        "📊 DEVELOPMENT PROFILE",
+        "========================="
+    ]
+    
+    # Extract keys for Left Column
+    for line in neofetch_lines:
+        if isinstance(line, tuple):
+            k, v = line
+            if k in ["OS", "Uptime (GitHub age)", "Shell", "Editor", "Location", "Current Focus"]:
+                left_col.append(line)
+        elif isinstance(line, str) and "@" in line:
+            left_col.append(line)
+            left_col.append("-" * len(line))
+            
+    # Extract keys for Right Column
+    for line in neofetch_lines:
+        if isinstance(line, tuple):
+            k, v = line
+            if k in ["Languages", "Frameworks", "Databases", "DevOps/CI", "Cloud"]:
+                right_col.append(line)
+                
+    # Add GitHub stats sub-items to Right Column
+    github_added = False
+    for line in neofetch_lines:
+        if isinstance(line, tuple):
+            k, v = line
+            if k.strip() in ["Repositories", "Followers", "Following", "Commits", "Stars Earned", "Pull Requests", "Issues/Reviews"]:
+                if not github_added:
+                    right_col.append("")
+                    right_col.append("GitHub Stats:")
+                    github_added = True
+                right_col.append(line)
+                
+    # Height calculation
+    ascii_line_height = 14
+    num_ascii_lines = len(ascii_lines)
+    ascii_height = num_ascii_lines * ascii_line_height
+    
+    stats_line_height = 18
+    num_stats_lines = max(len(left_col), len(right_col))
+    stats_height = num_stats_lines * stats_line_height
+    
     top_margin = 55
-    bottom_margin = 25
-    height = top_margin + (num_lines * line_height) + bottom_margin
+    middle_separator = 30
+    bottom_margin = 30
+    height = top_margin + ascii_height + middle_separator + stats_height + bottom_margin
     
     # SVG Boilerplate
     svg = []
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="{height}">')
     svg.append('  <style>')
-    svg.append(f'    .terminal {{ font-family: {font_family}; font-size: 13px; fill: {text_color}; }}')
+    svg.append(f'    .terminal {{ font-family: {font_family}; font-size: 11px; fill: {text_color}; }}')
+    svg.append(f'    .stats-text {{ font-family: {font_family}; font-size: 13px; fill: {text_color}; }}')
     svg.append(f'    .key {{ fill: {key_color}; font-weight: bold; }}')
     svg.append(f'    .title {{ fill: {title_color}; font-weight: bold; }}')
     svg.append('    .control-dot { stroke-width: 0; }')
@@ -179,24 +199,27 @@ def generate_svg_card(ascii_lines, neofetch_lines):
     svg.append('  <circle cx="25" cy="22" r="6" fill="#ff5f56" class="control-dot" />')
     svg.append('  <circle cx="45" cy="22" r="6" fill="#ffbd2e" class="control-dot" />')
     svg.append('  <circle cx="65" cy="22" r="6" fill="#27c93f" class="control-dot" />')
-    svg.append(f'  <text x="{width // 2}" y="26" text-anchor="middle" class="terminal header-text">ashuu1408@developer-os:~</text>')
+    svg.append(f'  <text x="{width // 2}" y="26" text-anchor="middle" class="stats-text header-text">ashuu1408@developer-os:~</text>')
     svg.append(f'  <line x1="0" y1="40" x2="{width}" y2="40" stroke="{border_color}" stroke-width="1.5" />')
     
-    # Left Column: ASCII Art
-    svg.append('  <!-- ASCII Art Column -->')
-    svg.append('  <text x="25" y="60" class="terminal" xml:space="preserve">')
+    # Render ASCII Art (Stacked on top)
+    svg.append('  <!-- ASCII Art Section -->')
+    svg.append('  <text x="30" y="60" class="terminal" xml:space="preserve">')
     for i, line in enumerate(ascii_lines):
         escaped_line = html.escape(line)
-        svg.append(f'    <tspan x="25" dy="{0 if i == 0 else 1.2}em">{escaped_line}</tspan>')
+        svg.append(f'    <tspan x="30" dy="{0 if i == 0 else 1.2}em">{escaped_line}</tspan>')
     svg.append('  </text>')
     
-    # Right Column: Neofetch Stats
-    svg.append('  <!-- Neofetch Stats Column -->')
-    # Place right column at X=410
-    svg.append('  <text x="410" y="60" class="terminal" xml:space="preserve">')
+    # Middle Separator Line
+    separator_y = top_margin + ascii_height + 15
+    svg.append(f'  <line x1="20" y1="{separator_y}" x2="{width - 20}" y2="{separator_y}" stroke="{border_color}" stroke-width="1.5" />')
     
+    # Left Column: System Info
+    stats_start_y = separator_y + 30
+    svg.append('  <!-- Left Column: System Info -->')
+    svg.append(f'  <text x="35" y="{stats_start_y}" class="stats-text" xml:space="preserve">')
     first = True
-    for line in neofetch_lines:
+    for line in left_col:
         dy_val = 0 if first else 1.2
         first = False
         
@@ -204,25 +227,44 @@ def generate_svg_card(ascii_lines, neofetch_lines):
             k, v = line
             escaped_k = html.escape(k)
             escaped_v = html.escape(v)
-            # Differentiate main keys and stats indented keys
-            if k.startswith("  "):
-                svg.append(f'    <tspan x="410" dy="{dy_val}em"><tspan class="key" fill="#888">{escaped_k}</tspan>: {escaped_v}</tspan>')
-            else:
-                svg.append(f'    <tspan x="410" dy="{dy_val}em"><tspan class="key">{escaped_k}</tspan>: {escaped_v}</tspan>')
-        elif line == "":
-            svg.append(f'    <tspan x="410" dy="{dy_val}em"> </tspan>')
+            svg.append(f'    <tspan x="35" dy="{dy_val}em"><tspan class="key">{escaped_k}</tspan>: {escaped_v}</tspan>')
         else:
             escaped_line = html.escape(line)
-            if "@" in line:
-                svg.append(f'    <tspan x="410" dy="{dy_val}em" class="title">{escaped_line}</tspan>')
-            elif "-" in line and all(c == '-' for c in line.strip()):
-                svg.append(f'    <tspan x="410" dy="{dy_val}em" fill="#30363d">{escaped_line}</tspan>')
+            if escaped_line.startswith("🖥️") or escaped_line.startswith("="):
+                svg.append(f'    <tspan x="35" dy="{dy_val}em" fill="#8b949e">{escaped_line}</tspan>')
+            elif "@" in line:
+                svg.append(f'    <tspan x="35" dy="{dy_val}em" class="title">{escaped_line}</tspan>')
             else:
-                svg.append(f'    <tspan x="410" dy="{dy_val}em" font-weight="bold" fill="#58a6ff">{escaped_line}</tspan>')
-                
+                svg.append(f'    <tspan x="35" dy="{dy_val}em" fill="#8b949e">{escaped_line}</tspan>')
     svg.append('  </text>')
-    svg.append('</svg>')
     
+    # Right Column: Dev Stack & Github Stats (X=440)
+    svg.append('  <!-- Right Column: Dev Stack & Stats -->')
+    svg.append(f'  <text x="440" y="{stats_start_y}" class="stats-text" xml:space="preserve">')
+    first = True
+    for line in right_col:
+        dy_val = 0 if first else 1.2
+        first = False
+        
+        if isinstance(line, tuple):
+            k, v = line
+            escaped_k = html.escape(k)
+            escaped_v = html.escape(v)
+            if k.startswith("  "):
+                svg.append(f'    <tspan x="440" dy="{dy_val}em"><tspan class="key" fill="#8b949e">{escaped_k}</tspan>: {escaped_v}</tspan>')
+            else:
+                svg.append(f'    <tspan x="440" dy="{dy_val}em"><tspan class="key">{escaped_k}</tspan>: {escaped_v}</tspan>')
+        elif line == "":
+            svg.append(f'    <tspan x="440" dy="{dy_val}em"> </tspan>')
+        else:
+            escaped_line = html.escape(line)
+            if escaped_line.startswith("📊") or escaped_line.startswith("="):
+                svg.append(f'    <tspan x="440" dy="{dy_val}em" fill="#8b949e">{escaped_line}</tspan>')
+            else:
+                svg.append(f'    <tspan x="440" dy="{dy_val}em" font-weight="bold" fill="#58a6ff">{escaped_line}</tspan>')
+    svg.append('  </text>')
+    
+    svg.append('</svg>')
     return "\n".join(svg)
 
 def main():
