@@ -88,7 +88,7 @@ Location: Kolkata
 
 GitHub Stats: 
   Repositories: 7
-  Followers: 4
+  Followers: 5
   Following: 6
   Commits: 76
   Stars Earned: 2
