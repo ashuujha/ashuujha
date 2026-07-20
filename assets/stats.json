@@ -1,6 +1,6 @@
 {
   "name": "Ashutosh Jha",
-  "followers": 5,
+  "followers": 6,
   "following": 7,
   "public_repos": 7,
   "uptime": "1 year, 8 months, 29 days",
@@ -46,12 +46,12 @@
       }
     ],
     "latest_active": {
-      "name": "Open-Source-Sponsorship-Platform",
+      "name": "ashuujha",
       "description": "",
       "stars": 0,
-      "language": "TypeScript",
-      "url": "https://github.com/ashuujha/Open-Source-Sponsorship-Platform",
-      "pushed_at": "2026-07-20T14:50:35Z"
+      "language": "Python",
+      "url": "https://github.com/ashuujha/ashuujha",
+      "pushed_at": "2026-07-20T15:12:34Z"
     },
     "newest": {
       "name": "ashuujha",
