@@ -46,12 +46,12 @@
       }
     ],
     "latest_active": {
-      "name": "ashuujha",
+      "name": "Open-Source-Sponsorship-Platform",
       "description": "",
       "stars": 0,
-      "language": "Python",
-      "url": "https://github.com/ashuujha/ashuujha",
-      "pushed_at": "2026-07-29T14:12:03Z"
+      "language": "TypeScript",
+      "url": "https://github.com/ashuujha/Open-Source-Sponsorship-Platform",
+      "pushed_at": "2026-07-29T15:59:30Z"
     },
     "newest": {
       "name": "ashuujha",
@@ -62,7 +62,7 @@
       "created_at": "2026-07-18T09:37:45Z"
     }
   },
-  "total_commits": "80",
+  "total_commits": "78",
   "total_prs": "7",
   "total_issues": "0",
   "total_reviews": "0",
