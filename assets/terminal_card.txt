@@ -73,7 +73,7 @@ mmpqqpq0XJO0Q0CXx1(tr1"aC[fjq$$$$$$$$Ot$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 ashuujha@developer-os
 ---------------------
 OS: Ubuntu 26.04 / Windows 11
-Uptime (GitHub age): 1 year, 9 months, 9 days
+Uptime (GitHub age): 1 year, 9 months, 10 days
 Shell: bash / zsh / fish
 Editor: VS Code / Antigravity / Zed
 
@@ -90,7 +90,7 @@ GitHub Stats:
   Repositories: 7
   Followers: 6
   Following: 7
-  Commits: 78
+  Commits: 59
   Stars Earned: 2
-  Pull Requests: 7
+  Pull Requests: 5
   Issues/Reviews: 0 / 0
