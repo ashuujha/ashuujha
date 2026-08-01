@@ -46,12 +46,12 @@
       }
     ],
     "latest_active": {
-      "name": "SponsorChain",
-      "description": "Open source sponser build on steller",
+      "name": "ashuujha",
+      "description": "",
       "stars": 0,
-      "language": "TypeScript",
-      "url": "https://github.com/ashuujha/SponsorChain",
-      "pushed_at": "2026-08-01T17:29:12Z"
+      "language": "Python",
+      "url": "https://github.com/ashuujha/ashuujha",
+      "pushed_at": "2026-08-01T17:31:54Z"
     },
     "newest": {
       "name": "SponsorChain",
