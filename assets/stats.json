@@ -5,7 +5,7 @@
   "public_repos": 7,
   "uptime": "1 year, 9 months, 11 days",
   "location": "Kolkata",
-  "stars_earned": 2,
+  "stars_earned": 4,
   "most_used_language": "TypeScript",
   "top_languages": [
     "TypeScript",
@@ -24,6 +24,13 @@
         "url": "https://github.com/ashuujha/Ashu"
       },
       {
+        "name": "ashuujha",
+        "description": "",
+        "stars": 1,
+        "language": "Python",
+        "url": "https://github.com/ashuujha/ashuujha"
+      },
+      {
         "name": "js",
         "description": "A code repo for javascript series",
         "stars": 1,
@@ -31,44 +38,36 @@
         "url": "https://github.com/ashuujha/js"
       },
       {
-        "name": "ashu-sup",
-        "description": "",
-        "stars": 0,
+        "name": "SponsorChain",
+        "description": "Open source sponser build on steller",
+        "stars": 1,
         "language": "TypeScript",
-        "url": "https://github.com/ashuujha/ashu-sup"
-      },
-      {
-        "name": "ashuujha",
-        "description": "",
-        "stars": 0,
-        "language": "Python",
-        "url": "https://github.com/ashuujha/ashuujha"
+        "url": "https://github.com/ashuujha/SponsorChain"
       }
     ],
     "latest_active": {
       "name": "SponsorChain",
       "description": "Open source sponser build on steller",
-      "stars": 0,
+      "stars": 1,
       "language": "TypeScript",
       "url": "https://github.com/ashuujha/SponsorChain",
-      "pushed_at": "2026-08-01T23:29:52Z"
+      "pushed_at": "2026-08-01T23:34:16Z"
     },
     "newest": {
       "name": "SponsorChain",
       "description": "Open source sponser build on steller",
-      "stars": 0,
+      "stars": 1,
       "language": "TypeScript",
       "url": "https://github.com/ashuujha/SponsorChain",
       "created_at": "2026-07-31T06:09:05Z"
     }
   },
-  "total_commits": "132",
+  "total_commits": "134",
   "total_prs": "6",
   "total_issues": "0",
   "total_reviews": "0",
   "recent_activities": [
-    "\ud83d\udcdd Working on projects and scaling systems...",
-    "\ud83d\ude80 Contributing to open source platforms...",
-    "\u2b50 Exploring new dev methodologies and technologies..."
+    "\u2b50 Starred [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 01, 2026)",
+    "\u2b50 Starred [ashuujha/SponsorChain](https://github.com/ashuujha/SponsorChain) (Aug 01, 2026)"
   ]
 }
