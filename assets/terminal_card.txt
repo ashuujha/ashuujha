@@ -90,7 +90,7 @@ GitHub Stats:
   Repositories: 7
   Followers: 6
   Following: 7
-  Commits: 135
+  Commits: 130
   Stars Earned: 4
   Pull Requests: 6
   Issues/Reviews: 0 / 0
