@@ -5,7 +5,7 @@
   "public_repos": 7,
   "uptime": "1 year, 9 months, 13 days",
   "location": "Kolkata",
-  "stars_earned": 5,
+  "stars_earned": 7,
   "most_used_language": "TypeScript",
   "top_languages": [
     "TypeScript",
@@ -19,9 +19,16 @@
       {
         "name": "SponsorChain",
         "description": "Open source sponser build on steller",
-        "stars": 2,
+        "stars": 3,
         "language": "TypeScript",
         "url": "https://github.com/ashuujha/SponsorChain"
+      },
+      {
+        "name": "ashuujha",
+        "description": "",
+        "stars": 2,
+        "language": "Python",
+        "url": "https://github.com/ashuujha/ashuujha"
       },
       {
         "name": "Ashu",
@@ -29,13 +36,6 @@
         "stars": 1,
         "language": "Solidity",
         "url": "https://github.com/ashuujha/Ashu"
-      },
-      {
-        "name": "ashuujha",
-        "description": "",
-        "stars": 1,
-        "language": "Python",
-        "url": "https://github.com/ashuujha/ashuujha"
       },
       {
         "name": "js",
@@ -46,27 +46,28 @@
       }
     ],
     "latest_active": {
-      "name": "ashuujha",
-      "description": "",
-      "stars": 1,
-      "language": "Python",
-      "url": "https://github.com/ashuujha/ashuujha",
-      "pushed_at": "2026-08-03T05:04:24Z"
+      "name": "SponsorChain",
+      "description": "Open source sponser build on steller",
+      "stars": 3,
+      "language": "TypeScript",
+      "url": "https://github.com/ashuujha/SponsorChain",
+      "pushed_at": "2026-08-03T07:45:31Z"
     },
     "newest": {
       "name": "SponsorChain",
       "description": "Open source sponser build on steller",
-      "stars": 2,
+      "stars": 3,
       "language": "TypeScript",
       "url": "https://github.com/ashuujha/SponsorChain",
       "created_at": "2026-07-31T06:09:05Z"
     }
   },
-  "total_commits": "130",
+  "total_commits": "140",
   "total_prs": "6",
   "total_issues": "0",
   "total_reviews": "0",
   "recent_activities": [
+    "\u2b50 Starred [sandipansingh/CampusChain](https://github.com/sandipansingh/CampusChain) (Aug 03, 2026)",
     "\u2b50 Starred [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 01, 2026)",
     "\u2b50 Starred [ashuujha/SponsorChain](https://github.com/ashuujha/SponsorChain) (Aug 01, 2026)"
   ]
