@@ -5,7 +5,7 @@
   "public_repos": 7,
   "uptime": "1 year, 9 months, 13 days",
   "location": "Kolkata",
-  "stars_earned": 7,
+  "stars_earned": 8,
   "most_used_language": "TypeScript",
   "top_languages": [
     "TypeScript",
@@ -17,18 +17,18 @@
   "featured_projects": {
     "most_starred": [
       {
+        "name": "ashuujha",
+        "description": "",
+        "stars": 3,
+        "language": "Python",
+        "url": "https://github.com/ashuujha/ashuujha"
+      },
+      {
         "name": "SponsorChain",
         "description": "Open source sponser build on steller",
         "stars": 3,
         "language": "TypeScript",
         "url": "https://github.com/ashuujha/SponsorChain"
-      },
-      {
-        "name": "ashuujha",
-        "description": "",
-        "stars": 2,
-        "language": "Python",
-        "url": "https://github.com/ashuujha/ashuujha"
       },
       {
         "name": "Ashu",
@@ -46,12 +46,12 @@
       }
     ],
     "latest_active": {
-      "name": "SponsorChain",
-      "description": "Open source sponser build on steller",
+      "name": "ashuujha",
+      "description": "",
       "stars": 3,
-      "language": "TypeScript",
-      "url": "https://github.com/ashuujha/SponsorChain",
-      "pushed_at": "2026-08-03T20:25:34Z"
+      "language": "Python",
+      "url": "https://github.com/ashuujha/ashuujha",
+      "pushed_at": "2026-08-03T20:44:01Z"
     },
     "newest": {
       "name": "SponsorChain",
