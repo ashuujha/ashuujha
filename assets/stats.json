@@ -17,18 +17,18 @@
   "featured_projects": {
     "most_starred": [
       {
-        "name": "ashuujha",
-        "description": "",
-        "stars": 3,
-        "language": "Python",
-        "url": "https://github.com/ashuujha/ashuujha"
-      },
-      {
         "name": "SponsorChain",
         "description": "Open source sponser build on steller",
         "stars": 3,
         "language": "TypeScript",
         "url": "https://github.com/ashuujha/SponsorChain"
+      },
+      {
+        "name": "ashuujha",
+        "description": "",
+        "stars": 2,
+        "language": "Python",
+        "url": "https://github.com/ashuujha/ashuujha"
       },
       {
         "name": "Ashu",
@@ -48,10 +48,10 @@
     "latest_active": {
       "name": "ashuujha",
       "description": "",
-      "stars": 3,
+      "stars": 2,
       "language": "Python",
       "url": "https://github.com/ashuujha/ashuujha",
-      "pushed_at": "2026-08-04T08:30:01Z"
+      "pushed_at": "2026-08-04T08:38:38Z"
     },
     "newest": {
       "name": "SponsorChain",
@@ -67,8 +67,6 @@
   "total_issues": "0",
   "total_reviews": "0",
   "recent_activities": [
-    "\ud83d\udcdd Working on projects and scaling systems...",
-    "\ud83d\ude80 Contributing to open source platforms...",
-    "\u2b50 Exploring new dev methodologies and technologies..."
+    "\u2b50 Starred [ashuujha/Portfolio](https://github.com/ashuujha/Portfolio) (Aug 04, 2026)"
   ]
 }
