@@ -1,28 +1,21 @@
-
-
-<!-- Terminal Neofetch Card -->
-
-<div align="center">
-  <p>
-  <img src="https://user-images.githubusercontent.com/74038190/212745723-c7c386dc-108c-4a50-9c76-0f90afb2c0fa.gif" width="100%" alt="Banner"/>
-</p>
-</div>
-
-<br />
-
 <div align="center">
   <h1>👋 I'm Ashutosh Jha</h1>
-  <h3>Creative Developer</h3>
+  <h3>I make 2Ds move | Creative Developer</h3>
   <p>
-
-  
     <a href="https://discord.com/users/ashuujha" target="_blank"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
     <a href="https://www.instagram.com/ashuu0001__" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
     <a href="https://www.linkedin.com/in/ashuu0001" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
     <a href="https://x.com/ashuu24__" target="_blank"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
     <a href="mailto:atulashu38@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
- 
   </p>
+</div>
+
+<br />
+
+<!-- Terminal Neofetch Card -->
+
+<div align="center">
+  <img src="./assets/terminal.svg" width="100%" alt="Neofetch Terminal" />
 </div>
 
 <br />
@@ -58,7 +51,9 @@
 <!-- Recent Activity -->
 ## Latest Kernel Logs (Recent Activity)
 
-- ⭐ Starred [ashuujha/Portfolio](https://github.com/ashuujha/Portfolio) (Aug 04, 2026)
+- 📝 Working on projects and scaling systems...
+- 🚀 Contributing to open source platforms...
+- ⭐ Exploring new dev methodologies and technologies...
 
 ---
 
@@ -68,5 +63,5 @@
 <br />
 
 <div align="center">
-  <sub>Last updated: <i>2026-08-23 06:41:28 UTC</i> | System status: <b>Operational</b></sub>
+  <sub>Last updated: <i>2026-08-25 03:11:26 UTC</i> | System status: <b>Operational</b></sub>
 </div>
