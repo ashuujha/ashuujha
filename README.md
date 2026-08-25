@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <div align="center">
   <p>
     <img src="https://user-images.githubusercontent.com/74038190/212745723-c7c386dc-108c-4a50-9c76-0f90afb2c0fa.gif" width="100%" alt="Banner"/>
@@ -8,7 +6,6 @@
 
 <br />
 
->>>>>>> 21eb43f (fix(readme): implement section markers, add snake animation, and fix GraphQL stats query)
 <div align="center">
   <h1>👋 I'm Ashutosh Jha</h1>
   <h3>I make 2Ds move | Creative Developer</h3>
@@ -23,20 +20,12 @@
 
 <br />
 
-<<<<<<< HEAD
-=======
 <!--START_SECTION:neofetch-->
->>>>>>> 21eb43f (fix(readme): implement section markers, add snake animation, and fix GraphQL stats query)
 <!-- Terminal Neofetch Card -->
 
 <div align="center">
   <img src="./assets/terminal.svg" width="100%" alt="Neofetch Terminal" />
 </div>
-<<<<<<< HEAD
-
-<br />
-
-=======
 <!--END_SECTION:neofetch-->
 
 <br />
@@ -86,11 +75,13 @@
 <!-- Recent Activity -->
 ## Latest Kernel Logs (Recent Activity)
 
-- 📝 Working on projects and scaling systems...
-- 🚀 Contributing to open source platforms...
-- ⭐ Exploring new dev methodologies and technologies...
+- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 25, 2026)
+- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 24, 2026)
+- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 24, 2026)
+- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 24, 2026)
+- 📝 Pushed updates to [ashuujha/SponsorChain](https://github.com/ashuujha/SponsorChain) (Aug 24, 2026)
+- 📝 Pushed updates to [ashuujha/SponsorChain](https://github.com/ashuujha/SponsorChain) (Aug 23, 2026)
 <!--END_SECTION:activity-->
->>>>>>> 21eb43f (fix(readme): implement section markers, add snake animation, and fix GraphQL stats query)
 
 ---
 
@@ -98,6 +89,6 @@
 <br />
 
 <div align="center">
-  <sub>Last updated: <i>2026-08-25 03:36:46 UTC</i> | System status: <b>Operational</b></sub>
+  <sub>Last updated: <i>2026-08-25 03:43:56 UTC</i> | System status: <b>Operational</b></sub>
 </div>
 <!--END_SECTION:footer-->

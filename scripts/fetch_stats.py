@@ -377,10 +377,14 @@ def fetch_recent_activity(username, limit=5):
                 
                 if event_type == "PushEvent":
                     commits = payload.get("commits", [])
-                    if commits:
+                    if commits and len(commits) > 0:
                         msg = commits[0].get("message", "").split("\n")[0]
                         activities.append(
                             f"📝 Pushed to [{repo_name}]({repo_url}): `{msg}` ({date_formatted})"
+                        )
+                    else:
+                        activities.append(
+                            f"📝 Pushed updates to [{repo_name}]({repo_url}) ({date_formatted})"
                         )
                 elif event_type == "PullRequestEvent":
                     action = payload.get("action")
