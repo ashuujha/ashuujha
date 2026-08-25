@@ -20,15 +20,7 @@
 
 <br />
 
-<!--START_SECTION:neofetch-->
-<!-- Terminal Neofetch Card -->
 
-<div align="center">
-  <img src="./assets/terminal.svg?v=2" width="100%" alt="Neofetch Terminal" />
-</div>
-<!--END_SECTION:neofetch-->
-
-<br />
 
 <!--START_SECTION:about-->
 <!-- About Section -->

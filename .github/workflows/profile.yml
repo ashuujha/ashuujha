@@ -39,12 +39,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/fetch_stats.py
 
-      - name: Generate Neofetch Card
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/generate_neofetch.py
-
       - name: Update README Dashboard
         env:
           GH_PAT: ${{ secrets.GH_PAT }}

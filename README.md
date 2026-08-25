@@ -20,15 +20,7 @@
 
 <br />
 
-<!--START_SECTION:neofetch-->
-<!-- Terminal Neofetch Card -->
 
-<div align="center">
-  <img src="./assets/terminal.svg?v=2" width="100%" alt="Neofetch Terminal" />
-</div>
-<!--END_SECTION:neofetch-->
-
-<br />
 
 <!--START_SECTION:about-->
 <!-- About Section -->
@@ -76,11 +68,11 @@
 ## Latest Kernel Logs (Recent Activity)
 
 - 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 25, 2026)
+- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 25, 2026)
+- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 25, 2026)
+- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 25, 2026)
+- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 25, 2026)
 - 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 24, 2026)
-- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 24, 2026)
-- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 24, 2026)
-- 📝 Pushed updates to [ashuujha/SponsorChain](https://github.com/ashuujha/SponsorChain) (Aug 24, 2026)
-- 📝 Pushed updates to [ashuujha/SponsorChain](https://github.com/ashuujha/SponsorChain) (Aug 23, 2026)
 <!--END_SECTION:activity-->
 
 ---
@@ -89,6 +81,6 @@
 <br />
 
 <div align="center">
-  <sub>Last updated: <i>2026-08-25 03:48:23 UTC</i> | System status: <b>Operational</b></sub>
+  <sub>Last updated: <i>2026-08-25 03:56:25 UTC</i> | System status: <b>Operational</b></sub>
 </div>
 <!--END_SECTION:footer-->
