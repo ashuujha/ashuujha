@@ -47,15 +47,15 @@
 ## Live GitHub Metrics
 
 <div align="center">
-  <img src="./assets/github_stats.svg" width="48%" alt="GitHub Stats" />
-  <img src="./assets/github_streak.svg" width="48%" alt="GitHub Streak" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ashuujha&amp;show_icons=true&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;icon_color=58a6ff&amp;text_color=c9d1d9" width="48%" alt="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com/?user=ashuujha&amp;theme=dark&amp;hide_border=true&amp;background=0d1117&amp;ring=58a6ff&amp;fire=58a6ff&amp;currStreakLabel=58a6ff&amp;sideNums=c9d1d9&amp;sideLabels=8b949e" width="48%" alt="GitHub Streak" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="./assets/top_languages.svg" width="48%" alt="Top Languages" />
-  <img src="./assets/profile_details.svg" width="48%" alt="Profile Details" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashuujha&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" width="48%" alt="Top Languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ashuujha&amp;theme=github_dark" width="48%" alt="Profile Details" />
 </div>
 <!--END_SECTION:metrics-->
 
@@ -72,7 +72,7 @@
 - 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 25, 2026)
 - 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 25, 2026)
 - 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 25, 2026)
-- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 24, 2026)
+- 📝 Pushed updates to [ashuujha/ashuujha](https://github.com/ashuujha/ashuujha) (Aug 25, 2026)
 <!--END_SECTION:activity-->
 
 ---
@@ -81,6 +81,6 @@
 <br />
 
 <div align="center">
-  <sub>Last updated: <i>2026-08-25 04:19:36 UTC</i> | System status: <b>Operational</b></sub>
+  <sub>Last updated: <i>2026-08-25 04:24:22 UTC</i> | System status: <b>Operational</b></sub>
 </div>
 <!--END_SECTION:footer-->
