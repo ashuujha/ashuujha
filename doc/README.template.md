@@ -1,4 +1,12 @@
 <div align="center">
+  <p>
+    <img src="https://user-images.githubusercontent.com/74038190/212745723-c7c386dc-108c-4a50-9c76-0f90afb2c0fa.gif" width="100%" alt="Banner"/>
+  </p>
+</div>
+
+<br />
+
+<div align="center">
   <h1>👋 I'm Ashutosh Jha</h1>
   <h3>I make 2Ds move | Creative Developer</h3>
   <p>
@@ -12,21 +20,35 @@
 
 <br />
 
+<!--START_SECTION:neofetch-->
 <!-- Terminal Neofetch Card -->
 
 <div align="center">
   <img src="./assets/terminal.svg" width="100%" alt="Neofetch Terminal" />
 </div>
+<!--END_SECTION:neofetch-->
 
 <br />
 
+<!--START_SECTION:about-->
 <!-- About Section -->
 ## 👤 About
 
 {{ABOUT}}
+<!--END_SECTION:about-->
 
 ---
 
+<!--START_SECTION:snake-->
+<!-- Contribution Snake Animation -->
+<div align="center">
+  <img src="./assets/github-contribution-grid-snake.svg" width="100%" alt="GitHub Contribution Snake" />
+</div>
+<!--END_SECTION:snake-->
+
+---
+
+<!--START_SECTION:metrics-->
 <!-- GitHub Analytics / Dashboard -->
 ## Live GitHub Metrics
 
@@ -41,23 +63,25 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username={{GITHUB_USERNAME}}&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" alt="Top Languages" width="48%" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={{GITHUB_USERNAME}}&amp;theme=github_dark" alt="Profile Details" width="48%" />
 </div>
+<!--END_SECTION:metrics-->
 
 <br />
 
 ---
 
+<!--START_SECTION:activity-->
 <!-- Recent Activity -->
 ## Latest Kernel Logs (Recent Activity)
 
 {{RECENT_ACTIVITY}}
+<!--END_SECTION:activity-->
 
 ---
 
-<!-- Blog & YouTube Section (Conditional) -->
-{{EXTRAS_SECTION}}
-
+<!--START_SECTION:footer-->
 <br />
 
 <div align="center">
   <sub>Last updated: <i>{{LAST_UPDATED}}</i> | System status: <b>Operational</b></sub>
 </div>
+<!--END_SECTION:footer-->

@@ -4,8 +4,15 @@ import json
 import requests
 from datetime import datetime, timezone
 
-# Setup headers for Github API
+# Setup headers for GitHub API
 TOKEN = os.environ.get("GH_PAT") or os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+
+def get_token_source():
+    if os.environ.get("GH_PAT"):
+        return "GH_PAT (Personal Access Token)"
+    elif os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN"):
+        return "GITHUB_TOKEN (Default Actions Token)"
+    return "None (Unauthenticated)"
 
 def get_headers():
     headers = {"Accept": "application/vnd.github.v3+json"}
@@ -15,15 +22,19 @@ def get_headers():
 
 def run_graphql_query(query, variables=None):
     if not TOKEN:
+        print("Warning: No GitHub token available for GraphQL query.")
         return None
     url = "https://api.github.com/graphql"
     headers = {"Authorization": f"bearer {TOKEN}"}
     try:
         response = requests.post(url, json={"query": query, "variables": variables}, headers=headers, timeout=15)
         if response.status_code == 200:
-            return response.json()
+            res_json = response.json()
+            if "errors" in res_json:
+                print(f"GraphQL returned error payload: {json.dumps(res_json['errors'])}")
+            return res_json
         else:
-            print(f"GraphQL query failed with status {response.status_code}: {response.text}")
+            print(f"GraphQL query failed with HTTP status {response.status_code}: {response.text}")
             return None
     except Exception as e:
         print(f"GraphQL connection error: {e}")
@@ -31,8 +42,10 @@ def run_graphql_query(query, variables=None):
 
 def calculate_uptime(created_at_str):
     """Calculates GitHub account age (uptime)."""
-    # Format: 2011-04-12T12:00:00Z
-    created_at = datetime.strptime(created_at_str, "%Y-%m-%dT%H:%M:%SZ")
+    try:
+        created_at = datetime.strptime(created_at_str, "%Y-%m-%dT%H:%M:%SZ")
+    except ValueError:
+        created_at = datetime.now(timezone.utc).replace(tzinfo=None)
     now = datetime.now(timezone.utc).replace(tzinfo=None)
     diff = now - created_at
     
@@ -53,7 +66,6 @@ def calculate_uptime(created_at_str):
 
 def fetch_real_counts_fallback(username):
     headers = get_headers()
-    # Add cloak-preview for commits search
     commit_headers = headers.copy()
     commit_headers["Accept"] = "application/vnd.github.cloak-preview"
     
@@ -70,7 +82,7 @@ def fetch_real_counts_fallback(username):
         if res.status_code == 200:
             counts["commits"] = res.json().get("total_count", 0)
         else:
-            print(f"Commit search failed with code {res.status_code}, using fallback estimation.")
+            print(f"Commit search endpoint returned status {res.status_code}: {res.text[:100]}")
             counts["commits"] = "40+"
     except Exception as e:
         print(f"Error fetching commits count: {e}")
@@ -82,6 +94,7 @@ def fetch_real_counts_fallback(username):
         if res.status_code == 200:
             counts["prs"] = res.json().get("total_count", 0)
         else:
+            print(f"PR search endpoint returned status {res.status_code}")
             counts["prs"] = "5+"
     except Exception as e:
         print(f"Error fetching PRs count: {e}")
@@ -93,6 +106,7 @@ def fetch_real_counts_fallback(username):
         if res.status_code == 200:
             counts["issues"] = res.json().get("total_count", 0)
         else:
+            print(f"Issue search endpoint returned status {res.status_code}")
             counts["issues"] = "0"
     except Exception as e:
         print(f"Error fetching issues count: {e}")
@@ -104,6 +118,7 @@ def fetch_real_counts_fallback(username):
         if res.status_code == 200:
             counts["reviews"] = res.json().get("total_count", 0)
         else:
+            print(f"Review search endpoint returned status {res.status_code}")
             counts["reviews"] = "0"
     except Exception as e:
         print(f"Error fetching reviews count: {e}")
@@ -112,8 +127,8 @@ def fetch_real_counts_fallback(username):
     return counts
 
 def fetch_rest_fallback(username):
-    """Fetches user details and repositories using REST API (no token required)."""
-    print("Using REST API fallback for gathering stats...")
+    """Fetches user details and repositories using REST API."""
+    print(f"Using REST API fallback for gathering stats (Token Source: {get_token_source()})...")
     headers = get_headers()
     stats = {}
     
@@ -129,7 +144,7 @@ def fetch_rest_fallback(username):
             stats["uptime"] = calculate_uptime(user_data.get("created_at", "2018-01-01T00:00:00Z"))
             stats["location"] = user_data.get("location") or "India"
         else:
-            print(f"Error fetching user profile: {user_res.status_code}")
+            print(f"Error fetching user profile via REST (Status {user_res.status_code}): {user_res.text[:100]}")
             return None
     except Exception as e:
         print(f"REST user fetch exception: {e}")
@@ -149,6 +164,7 @@ def fetch_rest_fallback(username):
                 timeout=10
             )
             if repos_res.status_code != 200:
+                print(f"REST repos fetch page {page} returned status {repos_res.status_code}")
                 break
             page_repos = repos_res.json()
             if not page_repos:
@@ -206,7 +222,6 @@ def fetch_rest_fallback(username):
         } if repos_by_created else None
     }
     
-    # Fetch real counts from GitHub Search API instead of estimates
     counts = fetch_real_counts_fallback(username)
     stats["total_commits"] = str(counts["commits"])
     stats["total_prs"] = str(counts["prs"])
@@ -215,12 +230,11 @@ def fetch_rest_fallback(username):
     
     return stats
 
-
 def fetch_graphql_stats(username):
     """Fetches comprehensive user statistics using GraphQL API."""
-    print("Using GraphQL API for gathering stats...")
+    print(f"Using GraphQL API for gathering stats (Token Source: {get_token_source()})...")
     
-    # GraphQL Query
+    # Corrected GraphQL Query using contributionsCollection
     query = """
     query($username: String!) {
       user(login: $username) {
@@ -232,6 +246,13 @@ def fetch_graphql_stats(username):
         }
         following {
           totalCount
+        }
+        contributionsCollection {
+          totalCommitContributions
+          totalIssueContributions
+          totalPullRequestContributions
+          totalPullRequestReviewContributions
+          totalRepositoryContributions
         }
         repositories(first: 100, ownerAffiliations: OWNER, isFork: false, orderBy: {field: PUSHED_AT, direction: DESC}) {
           totalCount
@@ -249,36 +270,19 @@ def fetch_graphql_stats(username):
           }
         }
       }
-      totalPRs: search(query: $prQuery, type: ISSUE, first: 1) {
-        issueCount
-      }
-      totalIssues: search(query: $issueQuery, type: ISSUE, first: 1) {
-        issueCount
-      }
-      totalReviews: search(query: $reviewQuery, type: ISSUE, first: 1) {
-        issueCount
-      }
-      totalCommits: search(query: $commitQuery, type: COMMITS, first: 1) {
-        commitCount
-      }
     }
     """
     
-    variables = {
-      "username": username,
-      "prQuery": f"author:{username} type:pr",
-      "issueQuery": f"author:{username} type:issue",
-      "reviewQuery": f"reviewed-by:{username} type:pr",
-      "commitQuery": f"author:{username}"
-    }
+    variables = {"username": username}
     
     result = run_graphql_query(query, variables)
     if not result or "data" not in result or not result["data"].get("user"):
-        print("GraphQL response invalid, falling back to REST...")
+        print("GraphQL response invalid or empty, falling back to REST...")
         return None
         
     data = result["data"]
     user_data = data["user"]
+    contribs = user_data.get("contributionsCollection", {})
     
     stats = {}
     stats["name"] = user_data.get("name") or username
@@ -288,10 +292,10 @@ def fetch_graphql_stats(username):
     stats["uptime"] = calculate_uptime(user_data["createdAt"])
     stats["location"] = user_data.get("location") or "India"
     
-    stats["total_prs"] = data["totalPRs"]["issueCount"]
-    stats["total_issues"] = data["totalIssues"]["issueCount"]
-    stats["total_reviews"] = data["totalReviews"]["issueCount"]
-    stats["total_commits"] = data["totalCommits"]["commitCount"]
+    stats["total_prs"] = contribs.get("totalPullRequestContributions", 0)
+    stats["total_issues"] = contribs.get("totalIssueContributions", 0)
+    stats["total_reviews"] = contribs.get("totalPullRequestReviewContributions", 0)
+    stats["total_commits"] = contribs.get("totalCommitContributions", 0)
     
     repos = user_data["repositories"]["nodes"]
     
@@ -314,7 +318,6 @@ def fetch_graphql_stats(username):
     # Sort repos for featured
     repos_by_stars = sorted(repos, key=lambda x: x["stargazerCount"], reverse=True)
     repos_by_created = sorted(repos, key=lambda x: x["createdAt"], reverse=True)
-    # repos are already ordered by PUSHED_AT in GraphQL query
     repos_by_pushed = repos
     
     stats["featured_projects"] = {
@@ -349,7 +352,7 @@ def fetch_graphql_stats(username):
 
 def fetch_recent_activity(username, limit=5):
     """Fetches public events representing recent activity of the user."""
-    print("Fetching recent activity events...")
+    print(f"Fetching recent activity events for {username}...")
     url = f"https://api.github.com/users/{username}/events/public"
     headers = get_headers()
     
@@ -358,7 +361,6 @@ def fetch_recent_activity(username, limit=5):
         response = requests.get(url, headers=headers, timeout=10)
         if response.status_code == 200:
             events = response.json()
-            # Parse events
             for event in events:
                 if len(activities) >= limit:
                     break
@@ -368,7 +370,6 @@ def fetch_recent_activity(username, limit=5):
                 repo_url = f"https://github.com/{repo_name}"
                 created_at_str = event.get("created_at")
                 
-                # Format date
                 dt = datetime.strptime(created_at_str, "%Y-%m-%dT%H:%M:%SZ")
                 date_formatted = dt.strftime("%b %d, %Y")
                 
@@ -377,7 +378,6 @@ def fetch_recent_activity(username, limit=5):
                 if event_type == "PushEvent":
                     commits = payload.get("commits", [])
                     if commits:
-                        # Extract the first commit message
                         msg = commits[0].get("message", "").split("\n")[0]
                         activities.append(
                             f"📝 Pushed to [{repo_name}]({repo_url}): `{msg}` ({date_formatted})"
@@ -433,11 +433,10 @@ def fetch_recent_activity(username, limit=5):
                             f"⭐ Starred [{repo_name}]({repo_url}) ({date_formatted})"
                         )
         else:
-            print(f"Error fetching activities: {response.status_code}")
+            print(f"Error fetching public activity events (Status {response.status_code}): {response.text[:100]}")
     except Exception as e:
         print(f"Activity fetch exception: {e}")
         
-    # Default fallbacks if empty
     if not activities:
         activities = [
             "📝 Working on projects and scaling systems...",
@@ -448,7 +447,6 @@ def fetch_recent_activity(username, limit=5):
     return activities
 
 def main():
-    # Load config to get username
     config_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "config.json")
     if os.path.exists(config_path):
         with open(config_path, "r") as f:
@@ -458,7 +456,8 @@ def main():
         
     username = config.get("github_username", "ashuujha")
     
-    # Try GraphQL first, fallback to REST
+    print(f"Starting stats fetch for user '{username}' using token source: {get_token_source()}")
+    
     stats = None
     if TOKEN:
         stats = fetch_graphql_stats(username)
@@ -467,13 +466,11 @@ def main():
         stats = fetch_rest_fallback(username)
         
     if not stats:
-        print("Error: Could not retrieve stats from Github.")
+        print("Error: Could not retrieve stats from GitHub via GraphQL or REST API.")
         sys.exit(1)
         
-    # Fetch recent activities
     stats["recent_activities"] = fetch_recent_activity(username, limit=6)
     
-    # Write to assets/stats.json
     stats_json_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "stats.json")
     os.makedirs(os.path.dirname(stats_json_path), exist_ok=True)
     with open(stats_json_path, "w") as f:

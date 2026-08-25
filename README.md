@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+<div align="center">
+  <p>
+    <img src="https://user-images.githubusercontent.com/74038190/212745723-c7c386dc-108c-4a50-9c76-0f90afb2c0fa.gif" width="100%" alt="Banner"/>
+  </p>
+</div>
+
+<br />
+
+>>>>>>> 21eb43f (fix(readme): implement section markers, add snake animation, and fix GraphQL stats query)
 <div align="center">
   <h1>👋 I'm Ashutosh Jha</h1>
   <h3>I make 2Ds move | Creative Developer</h3>
@@ -12,23 +23,45 @@
 
 <br />
 
+<<<<<<< HEAD
+=======
+<!--START_SECTION:neofetch-->
+>>>>>>> 21eb43f (fix(readme): implement section markers, add snake animation, and fix GraphQL stats query)
 <!-- Terminal Neofetch Card -->
 
 <div align="center">
   <img src="./assets/terminal.svg" width="100%" alt="Neofetch Terminal" />
 </div>
+<<<<<<< HEAD
 
 <br />
 
+=======
+<!--END_SECTION:neofetch-->
+
+<br />
+
+<!--START_SECTION:about-->
 <!-- About Section -->
 ## 👤 About
 
 > Currently learning and building projects with a growing interest in Artificial Intelligence and Machine Learning.
 > I believe in learning by building and constantly experimenting with new ideas.
 > Started working as a freelancer and later expanded into an agency model, now managing regular active clients across India.
+<!--END_SECTION:about-->
 
 ---
 
+<!--START_SECTION:snake-->
+<!-- Contribution Snake Animation -->
+<div align="center">
+  <img src="./assets/github-contribution-grid-snake.svg" width="100%" alt="GitHub Contribution Snake" />
+</div>
+<!--END_SECTION:snake-->
+
+---
+
+<!--START_SECTION:metrics-->
 <!-- GitHub Analytics / Dashboard -->
 ## Live GitHub Metrics
 
@@ -43,25 +76,28 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashuujha&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=c9d1d9" alt="Top Languages" width="48%" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ashuujha&amp;theme=github_dark" alt="Profile Details" width="48%" />
 </div>
+<!--END_SECTION:metrics-->
 
 <br />
 
 ---
 
+<!--START_SECTION:activity-->
 <!-- Recent Activity -->
 ## Latest Kernel Logs (Recent Activity)
 
 - 📝 Working on projects and scaling systems...
 - 🚀 Contributing to open source platforms...
 - ⭐ Exploring new dev methodologies and technologies...
+<!--END_SECTION:activity-->
+>>>>>>> 21eb43f (fix(readme): implement section markers, add snake animation, and fix GraphQL stats query)
 
 ---
 
-<!-- Blog & YouTube Section (Conditional) -->
-
-
+<!--START_SECTION:footer-->
 <br />
 
 <div align="center">
-  <sub>Last updated: <i>2026-08-25 03:11:26 UTC</i> | System status: <b>Operational</b></sub>
+  <sub>Last updated: <i>2026-08-25 03:36:46 UTC</i> | System status: <b>Operational</b></sub>
 </div>
+<!--END_SECTION:footer-->
