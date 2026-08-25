@@ -32,34 +32,10 @@ def load_stats_and_config():
         }
     return config, stats
 
-def load_ascii_art():
-    """Loads ASCII art from assets/ascii_art.txt."""
-    base_dir = os.path.dirname(os.path.dirname(__file__))
-    ascii_path = os.path.join(base_dir, "assets", "ascii_art.txt")
-    if os.path.exists(ascii_path):
-        with open(ascii_path, "r") as f:
-            return f.read().splitlines()
-    else:
-        # Fallback simple logo if avatar conversion is missing
-        return [
-            "    .--------.    ",
-            "   /          \\   ",
-            "  |   O    O   |  ",
-            "  |     ||     |  ",
-            "  |   \\____/   |  ",
-            "   \\          /   ",
-            "    '--------'    "
-        ]
-
 def format_neofetch_lines(config, stats):
     """Formats the Neofetch text lines."""
     username = config.get("github_username", "ashuujha")
     
-    # Formatted last updated time (local time of runner or UTC)
-    now = datetime.now(timezone.utc)
-    last_updated = now.strftime("%Y-%m-%d %H:%M:%S UTC")
-    
-    # Extract config lists
     languages = ", ".join(config.get("tech_stack", {}).get("languages", [])[:6])
     frameworks = ", ".join(config.get("tech_stack", {}).get("backend", [])[:3] + config.get("tech_stack", {}).get("frontend", [])[:3])
     databases = ", ".join(config.get("tech_stack", {}).get("databases", [])[:3])
@@ -95,14 +71,9 @@ def format_neofetch_lines(config, stats):
     ]
     return lines
 
-def generate_text_card(ascii_lines, neofetch_lines):
-    """Generates a text-based stacked terminal layout."""
-    card_lines = list(ascii_lines)
-    card_lines.append("")
-    card_lines.append("=" * 80)
-    card_lines.append("")
-    
-    # Process neofetch lines into strings
+def generate_text_card(neofetch_lines):
+    """Generates a plain-text terminal card."""
+    card_lines = []
     for line in neofetch_lines:
         if isinstance(line, tuple):
             k, v = line
@@ -114,9 +85,8 @@ def generate_text_card(ascii_lines, neofetch_lines):
             
     return "\n".join(card_lines)
 
-def generate_svg_card(ascii_lines, neofetch_lines, username="ashuujha"):
-    """Generates a premium, responsive SVG representing the Linux Terminal Card in a single-column layout."""
-    # Settings
+def generate_svg_card(neofetch_lines, username="ashuujha"):
+    """Generates a clean, responsive SVG representing the Linux Terminal Card."""
     font_family = "SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace"
     text_color = "#c9d1d9"
     key_color = "#58a6ff"  # Blue accent
@@ -126,29 +96,20 @@ def generate_svg_card(ascii_lines, neofetch_lines, username="ashuujha"):
     
     width = 850
     
-    # Filter empty lines at the very end of stats to look cleaner
     while neofetch_lines and neofetch_lines[-1] == "":
         neofetch_lines.pop()
         
-    # Height calculation
-    ascii_line_height = 14
-    num_ascii_lines = len(ascii_lines)
-    ascii_height = num_ascii_lines * ascii_line_height
-    
     stats_line_height = 18
     num_stats_lines = len(neofetch_lines)
     stats_height = num_stats_lines * stats_line_height
     
     top_margin = 55
-    middle_separator = 30
-    bottom_margin = 30
-    height = top_margin + ascii_height + middle_separator + stats_height + bottom_margin
+    bottom_margin = 25
+    height = top_margin + stats_height + bottom_margin
     
-    # SVG Boilerplate
     svg = []
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="{height}">')
     svg.append('  <style>')
-    svg.append(f'    .terminal {{ font-family: {font_family}; font-size: 11px; fill: {text_color}; }}')
     svg.append(f'    .stats-text {{ font-family: {font_family}; font-size: 13px; fill: {text_color}; }}')
     svg.append(f'    .key {{ fill: {key_color}; font-weight: bold; }}')
     svg.append(f'    .title {{ fill: {title_color}; font-weight: bold; }}')
@@ -167,20 +128,8 @@ def generate_svg_card(ascii_lines, neofetch_lines, username="ashuujha"):
     svg.append(f'  <text x="{width // 2}" y="26" text-anchor="middle" class="stats-text header-text">{username}@developer-os:~</text>')
     svg.append(f'  <line x1="0" y1="40" x2="{width}" y2="40" stroke="{border_color}" stroke-width="1.5" />')
     
-    # Render ASCII Art (Stacked on top)
-    svg.append('  <!-- ASCII Art Section -->')
-    svg.append('  <text x="30" y="60" class="terminal" xml:space="preserve">')
-    for i, line in enumerate(ascii_lines):
-        escaped_line = html.escape(line)
-        svg.append(f'    <tspan x="30" dy="{0 if i == 0 else 1.2}em">{escaped_line}</tspan>')
-    svg.append('  </text>')
-    
-    # Middle Separator Line
-    separator_y = top_margin + ascii_height + 15
-    svg.append(f'  <line x1="20" y1="{separator_y}" x2="{width - 20}" y2="{separator_y}" stroke="{border_color}" stroke-width="1.5" />')
-    
-    # Render Stats below separator
-    stats_start_y = separator_y + 30
+    # Render Stats Section
+    stats_start_y = 65
     svg.append('  <!-- Neofetch Stats Section -->')
     svg.append(f'  <text x="35" y="{stats_start_y}" class="stats-text" xml:space="preserve">')
     
@@ -214,11 +163,10 @@ def generate_svg_card(ascii_lines, neofetch_lines, username="ashuujha"):
 
 def main():
     config, stats = load_stats_and_config()
-    ascii_lines = load_ascii_art()
     neofetch_lines = format_neofetch_lines(config, stats)
     
     # 1. Generate text terminal card
-    text_card = generate_text_card(ascii_lines, neofetch_lines)
+    text_card = generate_text_card(neofetch_lines)
     text_card_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "terminal_card.txt")
     with open(text_card_path, "w") as f:
         f.write(text_card)
@@ -226,7 +174,7 @@ def main():
     
     # 2. Generate SVG card
     username = config.get("github_username", "ashuujha")
-    svg_card = generate_svg_card(ascii_lines, neofetch_lines, username)
+    svg_card = generate_svg_card(neofetch_lines, username)
     svg_card_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "terminal.svg")
     with open(svg_card_path, "w") as f:
         f.write(svg_card)
