@@ -1,28 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 195" width="100%" height="195">
   <style>
-    .card-title { font-family: SFMono-Regular, Consolas, monospace; font-size: 15px; font-weight: bold; fill: #58a6ff; }
-    .lang-name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; fill: #c9d1d9; }
+    .card-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 18px; font-weight: 600; fill: #58a6ff; }
+    .lang-name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; fill: #c9d1d9; }
+    .lang-pct { font-family: SFMono-Regular, Consolas, monospace; font-size: 12px; fill: #8b949e; }
+    .unavailable { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; fill: #8b949e; }
   </style>
-  <rect width="400" height="200" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
-  <text x="20" y="32" class="card-title">🚀 Top Languages</text>
-  <circle cx="30" cy="56" r="5" fill="#3178c6" />
-  <text x="45" y="60" class="lang-name">TypeScript</text>
-  <rect x="160" y="49" width="215" height="8" rx="4" fill="#21262d" />
-  <rect x="160" y="49" width="160" height="8" rx="4" fill="#3178c6" />
-  <circle cx="30" cy="82" r="5" fill="#8b949e" />
-  <text x="45" y="86" class="lang-name">Solidity</text>
-  <rect x="160" y="75" width="215" height="8" rx="4" fill="#21262d" />
-  <rect x="160" y="75" width="160" height="8" rx="4" fill="#8b949e" />
-  <circle cx="30" cy="108" r="5" fill="#3572A5" />
-  <text x="45" y="112" class="lang-name">Python</text>
-  <rect x="160" y="101" width="215" height="8" rx="4" fill="#21262d" />
-  <rect x="160" y="101" width="160" height="8" rx="4" fill="#3572A5" />
-  <circle cx="30" cy="134" r="5" fill="#f1e05a" />
-  <text x="45" y="138" class="lang-name">JavaScript</text>
-  <rect x="160" y="127" width="215" height="8" rx="4" fill="#21262d" />
-  <rect x="160" y="127" width="160" height="8" rx="4" fill="#f1e05a" />
-  <circle cx="30" cy="160" r="5" fill="#563d7c" />
-  <text x="45" y="164" class="lang-name">CSS</text>
-  <rect x="160" y="153" width="215" height="8" rx="4" fill="#21262d" />
-  <rect x="160" y="153" width="160" height="8" rx="4" fill="#563d7c" />
+  <rect width="300" height="195" rx="4.5" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <text x="25" y="35" class="card-title">Most Used Languages</text>
+  <rect x="25" y="52" width="83" height="8" fill="#3178c6" />
+  <rect x="108" y="52" width="41" height="8" fill="#AA6746" />
+  <rect x="149" y="52" width="41" height="8" fill="#3572A5" />
+  <rect x="190" y="52" width="41" height="8" fill="#f1e05a" />
+  <rect x="231" y="52" width="41" height="8" fill="#563d7c" />
+  <circle cx="30" cy="81" r="5" fill="#3178c6" />
+  <text x="43" y="85" class="lang-name">TypeScript</text>
+  <text x="43" y="101" class="lang-pct">33.3%</text>
+  <circle cx="165" cy="81" r="5" fill="#AA6746" />
+  <text x="178" y="85" class="lang-name">Solidity</text>
+  <text x="178" y="101" class="lang-pct">16.7%</text>
+  <circle cx="30" cy="111" r="5" fill="#3572A5" />
+  <text x="43" y="115" class="lang-name">Python</text>
+  <text x="43" y="131" class="lang-pct">16.7%</text>
+  <circle cx="165" cy="111" r="5" fill="#f1e05a" />
+  <text x="178" y="115" class="lang-name">JavaScript</text>
+  <text x="178" y="131" class="lang-pct">16.7%</text>
+  <circle cx="30" cy="141" r="5" fill="#563d7c" />
+  <text x="43" y="145" class="lang-name">CSS</text>
+  <text x="43" y="161" class="lang-pct">16.7%</text>
 </svg>

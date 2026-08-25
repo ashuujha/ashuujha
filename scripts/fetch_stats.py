@@ -64,6 +64,60 @@ def calculate_uptime(created_at_str):
         
     return ", ".join(parts)
 
+def calculate_streak_and_history(calendar):
+    """Calculates current streak, longest streak, total contributions, and monthly data from contributionCalendar."""
+    if not calendar or "weeks" not in calendar or not calendar.get("weeks"):
+        print("Warning: Contribution calendar data unavailable from GitHub API.")
+        return None
+        
+    all_days = []
+    for week in calendar.get("weeks", []):
+        for day in week.get("contributionDays", []):
+            all_days.append({
+                "date": day["date"],
+                "count": day["contributionCount"]
+            })
+            
+    total_contribs = calendar.get("totalContributions", sum(d["count"] for d in all_days))
+    
+    # Calculate streak
+    current_streak = 0
+    longest_streak = 0
+    temp_streak = 0
+    
+    for day in all_days:
+        if day["count"] > 0:
+            temp_streak += 1
+            if temp_streak > longest_streak:
+                longest_streak = temp_streak
+        else:
+            temp_streak = 0
+            
+    # Current streak (working backwards)
+    for day in reversed(all_days):
+        if day["count"] > 0:
+            current_streak += 1
+        elif current_streak > 0:
+            break
+            
+    # Monthly aggregation for graph
+    monthly_map = {}
+    for day in all_days:
+        month_key = day["date"][:7] # YYYY-MM
+        monthly_map[month_key] = monthly_map.get(month_key, 0) + day["count"]
+        
+    sorted_months = sorted(monthly_map.items())
+    monthly_counts = [v for k, v in sorted_months[-12:]]
+    if len(monthly_counts) < 12:
+        monthly_counts = [0] * (12 - len(monthly_counts)) + monthly_counts
+        
+    return {
+        "total_contributions": total_contribs,
+        "current_streak": current_streak,
+        "longest_streak": longest_streak,
+        "monthly_counts": monthly_counts
+    }
+
 def fetch_real_counts_fallback(username):
     headers = get_headers()
     commit_headers = headers.copy()
@@ -83,10 +137,10 @@ def fetch_real_counts_fallback(username):
             counts["commits"] = res.json().get("total_count", 0)
         else:
             print(f"Commit search endpoint returned status {res.status_code}: {res.text[:100]}")
-            counts["commits"] = "40+"
+            counts["commits"] = "N/A"
     except Exception as e:
         print(f"Error fetching commits count: {e}")
-        counts["commits"] = "40+"
+        counts["commits"] = "N/A"
         
     # Fetch PRs count
     try:
@@ -95,10 +149,10 @@ def fetch_real_counts_fallback(username):
             counts["prs"] = res.json().get("total_count", 0)
         else:
             print(f"PR search endpoint returned status {res.status_code}")
-            counts["prs"] = "5+"
+            counts["prs"] = "N/A"
     except Exception as e:
         print(f"Error fetching PRs count: {e}")
-        counts["prs"] = "5+"
+        counts["prs"] = "N/A"
         
     # Fetch Issues count
     try:
@@ -107,10 +161,10 @@ def fetch_real_counts_fallback(username):
             counts["issues"] = res.json().get("total_count", 0)
         else:
             print(f"Issue search endpoint returned status {res.status_code}")
-            counts["issues"] = "0"
+            counts["issues"] = "N/A"
     except Exception as e:
         print(f"Error fetching issues count: {e}")
-        counts["issues"] = "0"
+        counts["issues"] = "N/A"
         
     # Fetch Reviews count
     try:
@@ -119,10 +173,10 @@ def fetch_real_counts_fallback(username):
             counts["reviews"] = res.json().get("total_count", 0)
         else:
             print(f"Review search endpoint returned status {res.status_code}")
-            counts["reviews"] = "0"
+            counts["reviews"] = "N/A"
     except Exception as e:
         print(f"Error fetching reviews count: {e}")
-        counts["reviews"] = "0"
+        counts["reviews"] = "N/A"
         
     return counts
 
@@ -188,6 +242,7 @@ def fetch_rest_fallback(username):
     sorted_langs = sorted(languages_count.items(), key=lambda x: x[1], reverse=True)
     stats["most_used_language"] = sorted_langs[0][0] if sorted_langs else "Unknown"
     stats["top_languages"] = [lang[0] for lang in sorted_langs[:5]]
+    stats["language_counts"] = dict(sorted_langs[:5])
     
     # Sort repos for featured
     repos_by_stars = sorted(repos, key=lambda x: x.get("stargazers_count", 0), reverse=True)
@@ -227,6 +282,7 @@ def fetch_rest_fallback(username):
     stats["total_prs"] = str(counts["prs"])
     stats["total_issues"] = str(counts["issues"])
     stats["total_reviews"] = str(counts["reviews"])
+    stats["streak"] = calculate_streak_and_history(None)
     
     return stats
 
@@ -253,6 +309,15 @@ def fetch_graphql_stats(username):
           totalPullRequestContributions
           totalPullRequestReviewContributions
           totalRepositoryContributions
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                date
+                contributionCount
+              }
+            }
+          }
         }
         repositories(first: 100, ownerAffiliations: OWNER, isFork: false, orderBy: {field: PUSHED_AT, direction: DESC}) {
           totalCount
@@ -283,6 +348,8 @@ def fetch_graphql_stats(username):
     data = result["data"]
     user_data = data["user"]
     contribs = user_data.get("contributionsCollection", {})
+    calendar = contribs.get("contributionCalendar", {})
+    streak_info = calculate_streak_and_history(calendar)
     
     stats = {}
     stats["name"] = user_data.get("name") or username
@@ -296,6 +363,7 @@ def fetch_graphql_stats(username):
     stats["total_issues"] = contribs.get("totalIssueContributions", 0)
     stats["total_reviews"] = contribs.get("totalPullRequestReviewContributions", 0)
     stats["total_commits"] = contribs.get("totalCommitContributions", 0)
+    stats["streak"] = streak_info
     
     repos = user_data["repositories"]["nodes"]
     
@@ -314,6 +382,7 @@ def fetch_graphql_stats(username):
     sorted_langs = sorted(languages_count.items(), key=lambda x: x[1], reverse=True)
     stats["most_used_language"] = sorted_langs[0][0] if sorted_langs else "Unknown"
     stats["top_languages"] = [lang[0] for lang in sorted_langs[:5]]
+    stats["language_counts"] = dict(sorted_langs[:5])
     
     # Sort repos for featured
     repos_by_stars = sorted(repos, key=lambda x: x["stargazerCount"], reverse=True)

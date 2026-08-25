@@ -46,7 +46,14 @@
 
 <div align="center">
   <img src="./assets/github_stats.svg" width="48%" alt="GitHub Stats" />
+  <img src="./assets/github_streak.svg" width="48%" alt="GitHub Streak" />
+</div>
+
+<br />
+
+<div align="center">
   <img src="./assets/top_languages.svg" width="48%" alt="Top Languages" />
+  <img src="./assets/profile_details.svg" width="48%" alt="Profile Details" />
 </div>
 <!--END_SECTION:metrics-->
 

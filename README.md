@@ -48,7 +48,14 @@
 
 <div align="center">
   <img src="./assets/github_stats.svg" width="48%" alt="GitHub Stats" />
+  <img src="./assets/github_streak.svg" width="48%" alt="GitHub Streak" />
+</div>
+
+<br />
+
+<div align="center">
   <img src="./assets/top_languages.svg" width="48%" alt="Top Languages" />
+  <img src="./assets/profile_details.svg" width="48%" alt="Profile Details" />
 </div>
 <!--END_SECTION:metrics-->
 
@@ -74,6 +81,6 @@
 <br />
 
 <div align="center">
-  <sub>Last updated: <i>2026-08-25 04:06:09 UTC</i> | System status: <b>Operational</b></sub>
+  <sub>Last updated: <i>2026-08-25 04:19:36 UTC</i> | System status: <b>Operational</b></sub>
 </div>
 <!--END_SECTION:footer-->
