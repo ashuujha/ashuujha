@@ -1,8 +1,7 @@
 import os
 import json
 import re
-import urllib.request
-import xml.etree.ElementTree as ET
+import html
 from datetime import datetime, timezone
 
 def generate_typing_svg(texts, output_path):
@@ -147,6 +146,98 @@ def generate_typing_svg(texts, output_path):
         f.write("\n".join(svg))
     print(f"Typing animation header saved to {output_path}")
 
+def generate_github_stats_svg(stats, output_path):
+    """Generates a dark-themed SVG card for GitHub statistics."""
+    width = 400
+    height = 200
+    bg_color = "#0d1117"
+    border_color = "#30363d"
+    title_color = "#58a6ff"
+    text_color = "#c9d1d9"
+    stat_val_color = "#58a6ff"
+    
+    items = [
+        ("Total Commits", str(stats.get("total_commits", "0"))),
+        ("Public Repositories", str(stats.get("public_repos", 0))),
+        ("Followers", str(stats.get("followers", 0))),
+        ("Stars Earned", str(stats.get("stars_earned", 0))),
+        ("Pull Requests", str(stats.get("total_prs", 0))),
+        ("Issues / Reviews", f"{stats.get('total_issues', 0)} / {stats.get('total_reviews', 0)}")
+    ]
+    
+    svg = []
+    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="{height}">')
+    svg.append('  <style>')
+    svg.append(f'    .card-title {{ font-family: SFMono-Regular, Consolas, monospace; font-size: 15px; font-weight: bold; fill: {title_color}; }}')
+    svg.append(f'    .stat-label {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; fill: {text_color}; }}')
+    svg.append(f'    .stat-val {{ font-family: SFMono-Regular, Consolas, monospace; font-size: 13px; font-weight: bold; fill: {stat_val_color}; }}')
+    svg.append('  </style>')
+    svg.append(f'  <rect width="{width}" height="{height}" rx="8" fill="{bg_color}" stroke="{border_color}" stroke-width="1.5" />')
+    svg.append(f'  <text x="20" y="32" class="card-title">⚡ GitHub Stats</text>')
+    
+    y = 62
+    for label, val in items:
+        svg.append(f'  <text x="25" y="{y}" class="stat-label">{label}</text>')
+        svg.append(f'  <text x="{width - 25}" y="{y}" text-anchor="end" class="stat-val">{val}</text>')
+        y += 22
+        
+    svg.append('</svg>')
+    
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w") as f:
+        f.write("\n".join(svg))
+    print(f"GitHub Stats SVG saved to {output_path}")
+
+def generate_top_languages_svg(stats, output_path):
+    """Generates a dark-themed SVG card for Top Languages."""
+    width = 400
+    height = 200
+    bg_color = "#0d1117"
+    border_color = "#30363d"
+    title_color = "#58a6ff"
+    text_color = "#c9d1d9"
+    
+    lang_colors = {
+        "Go": "#00ADD8",
+        "Python": "#3572A5",
+        "Rust": "#dea584",
+        "TypeScript": "#3178c6",
+        "JavaScript": "#f1e05a",
+        "C++": "#f34b7d",
+        "HTML": "#e34c26",
+        "CSS": "#563d7c",
+        "Shell": "#89e051"
+    }
+    
+    top_langs = stats.get("top_languages", ["Go", "Python", "Rust", "TypeScript", "JavaScript"])[:5]
+    if not top_langs:
+        top_langs = ["Go", "Python", "Rust", "TypeScript"]
+        
+    svg = []
+    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="{height}">')
+    svg.append('  <style>')
+    svg.append(f'    .card-title {{ font-family: SFMono-Regular, Consolas, monospace; font-size: 15px; font-weight: bold; fill: {title_color}; }}')
+    svg.append(f'    .lang-name {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; fill: {text_color}; }}')
+    svg.append('  </style>')
+    svg.append(f'  <rect width="{width}" height="{height}" rx="8" fill="{bg_color}" stroke="{border_color}" stroke-width="1.5" />')
+    svg.append(f'  <text x="20" y="32" class="card-title">🚀 Top Languages</text>')
+    
+    y = 60
+    for lang in top_langs:
+        color = lang_colors.get(lang, "#8b949e")
+        svg.append(f'  <circle cx="30" cy="{y - 4}" r="5" fill="{color}" />')
+        svg.append(f'  <text x="45" y="{y}" class="lang-name">{lang}</text>')
+        svg.append(f'  <rect x="160" y="{y - 11}" width="215" height="8" rx="4" fill="#21262d" />')
+        svg.append(f'  <rect x="160" y="{y - 11}" width="160" height="8" rx="4" fill="{color}" />')
+        y += 26
+        
+    svg.append('</svg>')
+    
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w") as f:
+        f.write("\n".join(svg))
+    print(f"Top Languages SVG saved to {output_path}")
+
 def html_escape(char):
     if char == '&': return '&amp;'
     if char == '<': return '&lt;'
@@ -185,10 +276,16 @@ def main():
         print("Warning: stats.json not found. Run fetch_stats.py first.")
         stats = {}
         
-    # 1. Generate typing header SVG
+    # 1. Generate typing header SVG & metric card SVGs
     typing_texts = config.get("typing_texts", ["Creative Developer"])
     header_svg_path = os.path.join(base_dir, "assets", "header.svg")
     generate_typing_svg(typing_texts, header_svg_path)
+    
+    stats_svg_path = os.path.join(base_dir, "assets", "github_stats.svg")
+    generate_github_stats_svg(stats, stats_svg_path)
+    
+    langs_svg_path = os.path.join(base_dir, "assets", "top_languages.svg")
+    generate_top_languages_svg(stats, langs_svg_path)
     
     # 2. Target existing README.md (or fallback to doc/README.template.md)
     readme_path = os.path.join(base_dir, "README.md")
@@ -210,6 +307,16 @@ def main():
     about_lines = [f"> {line}" for line in config.get("about", [])]
     about_inner = "<!-- About Section -->\n## 👤 About\n\n" + "\n".join(about_lines)
     
+    # Live GitHub Metrics Section
+    metrics_inner = (
+        "<!-- GitHub Analytics / Dashboard -->\n"
+        "## Live GitHub Metrics\n\n"
+        '<div align="center">\n'
+        '  <img src="./assets/github_stats.svg" width="48%" alt="GitHub Stats" />\n'
+        '  <img src="./assets/top_languages.svg" width="48%" alt="Top Languages" />\n'
+        '</div>'
+    )
+    
     # Recent Activities (Kernel Logs)
     activities = stats.get("recent_activities", [])
     activities_md = "\n".join([f"- {act}" for act in activities])
@@ -222,6 +329,7 @@ def main():
     
     # Apply targeted section replacements
     content = replace_section(content, "about", about_inner)
+    content = replace_section(content, "metrics", metrics_inner)
     content = replace_section(content, "activity", activity_inner)
     content = replace_section(content, "footer", footer_inner)
     

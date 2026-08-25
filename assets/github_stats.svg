@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="200">
+  <style>
+    .card-title { font-family: SFMono-Regular, Consolas, monospace; font-size: 15px; font-weight: bold; fill: #58a6ff; }
+    .stat-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; fill: #c9d1d9; }
+    .stat-val { font-family: SFMono-Regular, Consolas, monospace; font-size: 13px; font-weight: bold; fill: #58a6ff; }
+  </style>
+  <rect width="400" height="200" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
+  <text x="20" y="32" class="card-title">⚡ GitHub Stats</text>
+  <text x="25" y="62" class="stat-label">Total Commits</text>
+  <text x="375" y="62" text-anchor="end" class="stat-val">185</text>
+  <text x="25" y="84" class="stat-label">Public Repositories</text>
+  <text x="375" y="84" text-anchor="end" class="stat-val">7</text>
+  <text x="25" y="106" class="stat-label">Followers</text>
+  <text x="375" y="106" text-anchor="end" class="stat-val">4</text>
+  <text x="25" y="128" class="stat-label">Stars Earned</text>
+  <text x="375" y="128" text-anchor="end" class="stat-val">10</text>
+  <text x="25" y="150" class="stat-label">Pull Requests</text>
+  <text x="375" y="150" text-anchor="end" class="stat-val">6</text>
+  <text x="25" y="172" class="stat-label">Issues / Reviews</text>
+  <text x="375" y="172" text-anchor="end" class="stat-val">0 / 0</text>
+</svg>
